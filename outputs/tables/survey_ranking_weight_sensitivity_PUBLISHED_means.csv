@@ -1,0 +1,7 @@
+scenario,Seawall,Revetment,Riprap,Breakwater,Mangrove Rehabilitation,ranking (best first)
+equal weights (thesis),4.3488,3.9877,3.6265,3.7068,4.1358,Seawall > Mangrove Rehabilitation > Revetment > Breakwater > Riprap
+cost counts double,4.3386,3.9762,3.6191,3.7011,4.1667,Seawall > Mangrove Rehabilitation > Revetment > Breakwater > Riprap
+environmental impact counts double,4.328,3.9709,3.6243,3.6984,4.1852,Seawall > Mangrove Rehabilitation > Revetment > Breakwater > Riprap
+stability + durability count double,4.3542,3.9931,3.6181,3.6945,4.0903,Seawall > Mangrove Rehabilitation > Revetment > Breakwater > Riprap
+"engineering only (no cost, no environment)",4.4028,4.037,3.6435,3.7315,3.9954,Seawall > Revetment > Mangrove Rehabilitation > Breakwater > Riprap
+cost + environment only,4.2408,3.8889,3.5926,3.6574,4.4167,Mangrove Rehabilitation > Seawall > Revetment > Breakwater > Riprap
