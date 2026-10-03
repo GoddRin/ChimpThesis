@@ -1,0 +1,89 @@
+scenario,barangay,n,dominant,worst,mean
+base,Dodan,40,Low,Medium,-1.93
+base,Maura,117,Low,Low,-1.389
+base,Bulala Norte,27,Medium,Medium,-3.35
+base,San Antonio,13,Low,Low,-0.911
+base,Linao,48,Medium,Medium,-0.699
+base,Paddaya,93,Low,Low,-1.412
+base,Punta,6,Low,Low,0.189
+base,Bulala Sur,29,Medium,Medium,-2.741
+spacing_25,Dodan,80,Low,Medium,-1.93
+spacing_25,Maura,234,Low,Low,-1.389
+spacing_25,Bulala Norte,53,Medium,Medium,-3.353
+spacing_25,San Antonio,26,Low,Low,-0.911
+spacing_25,Linao,100,Medium,Medium,-0.666
+spacing_25,Paddaya,185,Low,Low,-1.412
+spacing_25,Punta,14,Low,Low,0.251
+spacing_25,Bulala Sur,57,Medium,Medium,-2.748
+spacing_100,Dodan,21,Low,Medium,-1.929
+spacing_100,Maura,58,Low,Low,-1.383
+spacing_100,Bulala Norte,14,Medium,Medium,-3.344
+spacing_100,San Antonio,6,Low,Low,-0.922
+spacing_100,Linao,24,Medium,Medium,-0.873
+spacing_100,Paddaya,46,Low,Low,-1.408
+spacing_100,Punta,4,Low,Low,0.208
+spacing_100,Bulala Sur,14,Medium,Medium,-2.726
+smooth_100,Dodan,40,Low,Medium,-1.931
+smooth_100,Maura,117,Low,Low,-1.388
+smooth_100,Bulala Norte,27,Medium,Medium,-3.35
+smooth_100,San Antonio,13,Low,Low,-0.904
+smooth_100,Linao,49,Medium,Medium,-0.592
+smooth_100,Paddaya,93,Low,Low,-1.412
+smooth_100,Punta,0,no data,no data,
+smooth_100,Bulala Sur,29,Medium,Medium,-2.741
+smooth_400,Dodan,40,Low,Medium,-1.928
+smooth_400,Maura,117,Low,Low,-1.39
+smooth_400,Bulala Norte,27,Medium,Medium,-3.35
+smooth_400,San Antonio,13,Low,Low,-0.919
+smooth_400,Linao,58,Medium,Medium,-1.072
+smooth_400,Paddaya,92,Low,Low,-1.411
+smooth_400,Punta,14,Low,Low,-0.095
+smooth_400,Bulala Sur,29,Medium,Medium,-2.741
+multihit_farthest,Dodan,40,Low,Medium,-1.93
+multihit_farthest,Maura,117,Low,Low,-1.389
+multihit_farthest,Bulala Norte,27,Medium,Medium,-3.35
+multihit_farthest,San Antonio,13,Low,Low,-0.911
+multihit_farthest,Linao,48,Medium,Medium,-0.573
+multihit_farthest,Paddaya,93,Low,Low,-1.412
+multihit_farthest,Punta,6,Low,Low,0.189
+multihit_farthest,Bulala Sur,29,Medium,Medium,-2.741
+with_estuarine,Dodan,40,Low,Medium,-1.93
+with_estuarine,Maura,120,Low,Low,-0.751
+with_estuarine,Bulala Norte,27,Medium,Medium,-3.35
+with_estuarine,San Antonio,4,Low,Low,-0.602
+with_estuarine,Linao,108,Low,High,-4.687
+with_estuarine,Paddaya,83,Low,Low,-1.415
+with_estuarine,Punta,4,Low,Low,-0.258
+with_estuarine,Bulala Sur,28,Medium,Medium,-2.756
+thr_-0.5,Dodan,40,Medium,Medium,-1.93
+thr_-0.5,Maura,117,Low,Medium,-1.389
+thr_-0.5,Bulala Norte,27,Medium,Medium,-3.35
+thr_-0.5,San Antonio,13,Low,Low,-0.911
+thr_-0.5,Linao,48,Medium,Medium,-0.699
+thr_-0.5,Paddaya,93,Low,Medium,-1.412
+thr_-0.5,Punta,6,Low,Low,0.189
+thr_-0.5,Bulala Sur,29,Medium,Medium,-2.741
+thr_+0.5,Dodan,40,Low,Low,-1.93
+thr_+0.5,Maura,117,Low,Low,-1.389
+thr_+0.5,Bulala Norte,27,Medium,Medium,-3.35
+thr_+0.5,San Antonio,13,Low,Low,-0.911
+thr_+0.5,Linao,48,Low,Medium,-0.699
+thr_+0.5,Paddaya,93,Low,Low,-1.412
+thr_+0.5,Punta,6,Low,Low,0.189
+thr_+0.5,Bulala Sur,29,Medium,Medium,-2.741
+classify_by_LRR,Dodan,40,Low,Low,-1.719
+classify_by_LRR,Maura,117,Low,Low,-1.417
+classify_by_LRR,Bulala Norte,27,Medium,Medium,-3.218
+classify_by_LRR,San Antonio,13,Low,Low,-0.798
+classify_by_LRR,Linao,48,Low,Medium,0.168
+classify_by_LRR,Paddaya,93,Low,Low,-1.2
+classify_by_LRR,Punta,6,Low,Low,-0.048
+classify_by_LRR,Bulala Sur,29,Medium,Medium,-2.444
+offset_landward_300,Dodan,40,Low,Medium,-1.93
+offset_landward_300,Maura,117,Low,Low,-1.389
+offset_landward_300,Bulala Norte,27,Medium,Medium,-3.35
+offset_landward_300,San Antonio,13,Low,Low,-0.911
+offset_landward_300,Linao,48,Medium,Medium,-0.699
+offset_landward_300,Paddaya,89,Low,Low,-1.413
+offset_landward_300,Punta,6,Low,Low,0.189
+offset_landward_300,Bulala Sur,29,Medium,Medium,-2.741

@@ -52,3 +52,22 @@ The Earth Engine edge-pixel rasters are thinned to a one-pixel centre line (`ske
 ## 5. How we know the engine is right
 
 `tests/test_transects.py` builds synthetic coasts with known answers: a straight shoreline retreating exactly 2 m/yr gives EPR = LRR = −2.000; advancing 1.5 m/yr gives +1.500; concentric circular arcs (curved coast) reproduce the radius change within 0.01 m/yr; a missing year still gives the LRR from the other years and an empty, explained LRR when fewer than three dates remain; a hooked shoreline is flagged `multi_hit` and the `nearest`/`farthest` rules give different, correct answers; and swapping land to the other side of the line gives identical signed results.
+
+## 6. Risk classes, segments and tables (Phase 5)
+
+* **Class** from the erosion rate e = max(0, −EPR): Low e < 2, Medium 2 ≤ e ≤ 5 (both ends inclusive), High e > 5 m/yr (`config.risk`). Accreting transects (EPR > 0) are Low (`risk.accretion_class`) and tagged `trend = accreting`.
+* **Unclassified** — a transect with a `crossing` flag (a neighbouring transect crosses it: a fan at the river-mouth hook) or whose start is not on land has no meaningful rate; it keeps its raw number (`risk_class_raw`) but is **not** classified and is drawn grey.
+* **Segments** — the 2025 open-coast shoreline is cut halfway between neighbouring transects; each piece inherits its transect's class, EPR, LRR, barangay and confidence (`outputs/layers/Aparri_Erosion_Risk_v2.gpkg`, style `Aparri_Erosion_Risk_v2.qml`).
+* **Confidence** — high / medium / low. *Low*: invalid or fan/bend transect. *Medium*: multiple crossings, a missing year, or the class would change inside the error band. *High*: none of these. The error band is the configured uncertainty if given; while none is configured it is a **what-if of ±30 m per date (one Landsat pixel)** = ±1.21 m/yr (`risk.confidence_scenario_unc_m`). `unc_basis` in the data says which was used.
+* **Barangay** — each transect goes to the nearest study-barangay polygon within 500 m of its mean shoreline position (a plain intersection would lose the coast, which is the polygon edge).
+* **Table 4.2** — computed only from rebuilt transects. Kilometres of shoreline per class is the primary measure; hectares are kilometres × a 100 m coastal strip (decision D-08) and are labelled as such. No number comes from the legacy CSV.
+
+## 7. Limitations and uncertainty (plain English)
+
+1. **Resolution.** The imagery is 30 m Landsat. Over 35 years one pixel is 0.86 m/yr; one pixel at both ends is ±1.21 m/yr. The Low/Medium boundary (2 m/yr) is only 1.7 such steps away, so a large share of the coast sits within the error of a class boundary (`class_may_flip`). Medium at Bulala Sur/Norte is the most robust finding; Low versus Medium elsewhere is a matter of convention and error.
+2. **Dates and tide.** The exact acquisition dates are unknown (the legacy composites are whole-year medians) and a shoreline taken at high tide differs from one at low tide by tens of metres on a gently sloping beach. Tide state was not recorded; no tide model was available. EPR therefore uses 35 calendar years.
+3. **Shoreline indicator.** The shoreline is the water/land edge of an optical image (a "waterline"). It is not the vegetation line or the erosion scarp, which are the features that engineers and residents observe. Field verification (`docs/field_validation_form.md`) is the planned check.
+4. **Provenance.** The vector lines' origin is unknown (Q-G1). They were cleaned reproducibly and compared with an independent raster-derived set (Phase 6: median disagreement 10–17 m, 92 % class agreement), but that comparison cannot detect errors the two sets share.
+5. **River mouth excluded.** The Cagayan River banks and the Linao spit hook are not classified; their rates are dominated by floods and bar migration and the transects there cross each other. Including them (sensitivity run `with_estuarine`) produces the only "High" values.
+6. **Rate, not risk.** Classes describe the erosion rate only. Exposure (people, buildings, roads) and vulnerability were not assessed — the thesis itself states this (Ch. III p. 41 and Ch. IV p. 60).
+7. **End-point rate uses two dates.** Intermediate shorelines (2000/2010/2020) are shown and used in the LRR, but the thesis defines the class from the 1990–2025 EPR; the two estimators disagree on the class for about one transect in nine.

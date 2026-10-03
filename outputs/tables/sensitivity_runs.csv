@@ -1,0 +1,12 @@
+scenario,description,transects,n_valid,pct_Low,pct_Medium,pct_High,mean_EPR,median_EPR
+base,base run,415,373,73.19,26.81,0.0,-1.569,-1.455
+spacing_25,transect spacing 25 m,830,749,73.698,26.302,0.0,-1.551,-1.45
+spacing_100,transect spacing 100 m,207,187,73.262,26.738,0.0,-1.583,-1.462
+smooth_100,baseline smoothing 100 m,415,368,73.098,26.902,0.0,-1.581,-1.465
+smooth_400,baseline smoothing 400 m,414,390,72.821,26.923,0.256,-1.577,-1.448
+multihit_farthest,multi-hit rule: farthest crossing,415,373,73.19,26.81,0.0,-1.553,-1.455
+with_estuarine,include estuarine banks,688,475,73.895,21.263,4.842,-2.07,-1.383
+thr_-0.5,thresholds shifted -0.5 m/yr,415,373,52.011,47.989,0.0,-1.569,-1.455
+thr_+0.5,thresholds shifted +0.5 m/yr,415,373,81.233,18.767,0.0,-1.569,-1.455
+classify_by_LRR,classify with LRR instead of EPR,415,373,81.769,18.231,0.0,-1.358,-1.33
+offset_landward_300,baseline offset 300 m instead of 150 m,415,369,72.9,27.1,0.0,-1.571,-1.461
