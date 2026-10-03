@@ -60,15 +60,17 @@ clean:
   min_segment_m: 20      # fragments shorter than this are reported/removed
   min_loop_m: 50         # loops/spurs shorter than this are removed (and logged)
   simplify_m: 1.0        # never simplify more than this
-  join_gap_m: 400        # [DECISION] gaps up to this are bridged ONLY for chain ordering
-                         #            (the bridge is not added to the geometry)
+  duplicate_tol_m: 60    # a fragment lying >= duplicate_cover of its length within this distance of other
+  duplicate_cover: 0.8   #   fragments of the SAME year is a stretch digitised twice and is removed (logged)
+  min_scope_run_m: 150   # open-coast / estuarine runs shorter than this are absorbed by their neighbour
 manual_year_overrides: {}   # e.g. {"feature_17": 2010} once a human has decided the "Hig" feature
 
 # --- Scope: open coast vs estuary --------------------------------------------
 scope:
   include_estuarine_banks: false   # [DECISION] D-06: open sea-facing coast is the primary scope
   review_mask_file: null           # QGIS-editable GeoPackage the students may correct
-  hull_tolerance_m: 350            # vertices within this distance of the seaward hull = open coast
+  hull_tolerance_m: 350            # vertices within this distance of the sea-facing outline = open coast
+  concave_ratio: 0.1               # tightness of the outline around all shorelines (0 = tight, 1 = convex hull)
 
 # --- Uncertainty (metres, 1-sigma-like) --------------------------------------
 # Components are combined as root-sum-of-squares. If ANY component of a year is null
