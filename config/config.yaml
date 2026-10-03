@@ -1,0 +1,124 @@
+# =============================================================================
+# Aparri coastal-erosion pipeline — ALL parameters live here (CLAUDE.md §5).
+# A value of `null` means "NOT PROVIDED by the students". The pipeline never
+# replaces a null with a guess: it carries it through and prints a warning.
+# Lines marked [DECISION] record a choice made by the analyst; see
+# docs/decisions.md for who decided, when and why.
+# =============================================================================
+
+# --- Coordinate systems ------------------------------------------------------
+crs_work: 32651        # WGS 84 / UTM zone 51N, metres. ALL distances/areas are computed here.
+crs_source: 4326       # CRS of the supplied shapefiles and GeoTIFFs (degrees).
+                       # The legacy QGIS project is EPSG:3857: never measure in it.
+
+# --- Study period ------------------------------------------------------------
+years: [1990, 2000, 2010, 2020, 2025]
+reference_year: 1990   # earliest shoreline; EPR end points are years[0] and years[-1]
+# Exact acquisition dates per year are NOT known (Earth Engine script used whole-year
+# medians). Fill in YYYY-MM-DD when the students supply them; EPR then uses the real
+# time span instead of the year difference.
+acquisition_dates: {1990: null, 2000: null, 2010: null, 2020: null, 2025: null}
+
+# --- Which shoreline set the engine analyses ---------------------------------
+# vector_clean = hand/unknown-origin lines, cleaned (Phase 3A)
+# raster_clean = lines traced from the Earth Engine edge-pixel rasters (Phase 3B)
+# landsat_v2   = re-derived from Landsat with a defensible method (Phase 3C; needs internet)
+shoreline_set: vector_clean   # [DECISION] primary set, see decisions.md D-03
+
+# --- Legacy reproduction only ------------------------------------------------
+# The old Earth Engine script made "barangay statistics" from 1 km circles around
+# single points. Used ONLY to reproduce/audit those numbers, never for results.
+legacy_barangay_points_buffer_m: 1000
+legacy_barangay_points:             # lon, lat copied from Code.docx section 28
+  Dodan: [121.701, 18.324]
+  Maura: [121.668, 18.347]
+  Bulala Norte: [121.578, 18.377]
+  San Antonio: [121.640, 18.359]
+  Linao: [121.594, 18.369]
+  Paddaya: [121.733, 18.310]
+  Punta: [121.633, 18.359]
+  Bulala Sur: [121.566, 18.382]
+legacy_gee_aoi: [121.58, 18.33, 121.72, 18.39]   # xmin, ymin, xmax, ymax (Code.docx section 1)
+landsat_pixel_m: 30                              # nominal Landsat pixel (Code.docx SCALE)
+
+# --- Baseline & transects (DSAS-style) ---------------------------------------
+baseline:
+  method: smoothed_reference   # reference-year shoreline, smoothed, pushed landward
+  reference_year: 1990
+  smooth_m: 200                # moving-average window along the line
+  offset_landward_m: 150       # [DECISION] extra distance landward of the farthest-inland year
+transects:
+  spacing_m: 50
+  length_seaward_m: 600
+  length_landward_m: 600
+  multi_hit_rule: nearest      # nearest | farthest | flag_only   (which crossing to keep)
+  min_years_for_lrr: 3
+
+# --- Cleaning of the vector lines (Phase 3A) ---------------------------------
+clean:
+  snap_tol_m: 5          # endpoints closer than this are joined
+  min_segment_m: 20      # fragments shorter than this are reported/removed
+  min_loop_m: 50         # loops/spurs shorter than this are removed (and logged)
+  simplify_m: 1.0        # never simplify more than this
+  join_gap_m: 400        # [DECISION] gaps up to this are bridged ONLY for chain ordering
+                         #            (the bridge is not added to the geometry)
+manual_year_overrides: {}   # e.g. {"feature_17": 2010} once a human has decided the "Hig" feature
+
+# --- Scope: open coast vs estuary --------------------------------------------
+scope:
+  include_estuarine_banks: false   # [DECISION] D-06: open sea-facing coast is the primary scope
+  review_mask_file: null           # QGIS-editable GeoPackage the students may correct
+  hull_tolerance_m: 350            # vertices within this distance of the seaward hull = open coast
+
+# --- Uncertainty (metres, 1-sigma-like) --------------------------------------
+# Components are combined as root-sum-of-squares. If ANY component of a year is null
+# the uncertainty for that year is reported as NOT_PROVIDED, never invented.
+uncertainty_m:
+  georeferencing: null
+  digitizing: null
+  pixel: null          # 30 only for Landsat-derived sets (set automatically per shoreline_set)
+  tidal: null
+uncertainty_proposals_m:       # PROPOSALS from Phase 6, for the students to confirm. Not used.
+  pixel_landsat: 30
+
+# --- Risk classes (thesis Table 3.1) -----------------------------------------
+risk:
+  low_max: 2.0         # erosion rate < 2 m/yr            -> Low
+  medium_max: 5.0      # 2 <= erosion rate <= 5 m/yr      -> Medium (both ends inclusive)
+                       # > 5 m/yr                         -> High
+  accretion_class: Low # [DECISION] D-07 accreting transects are Low and tagged "accreting"
+  strip_width_m: 100   # [DECISION] D-08 width of the coastal strip used for hectare figures
+  length_basis: shoreline_km   # primary area-like measure = km of shoreline per class
+
+# --- Barangays ---------------------------------------------------------------
+barangay_join_tolerance_m: 500
+study_barangays: [Linao, Maura, Punta, San Antonio, Bulala Sur, Bulala Norte, Dodan, Paddaya]
+# Order of the rows in thesis Table 4.2 (copied from the manuscript)
+table_4_2_order: [Dodan, Maura, Bulala Norte, San Antonio, Linao, Paddaya, Punta, Bulala Sur]
+
+# --- Survey (Phase 7) --------------------------------------------------------
+survey:
+  structures: [Seawall, Revetment, Riprap, Breakwater, Mangrove Rehabilitation]
+  criteria: [Stability, Effectiveness, Cost, Durability, Maintenance, Environmental Impact]
+  alpha_min: 0.70
+  significance_level: 0.05
+  interpretation:       # lower bound, label (thesis p.50)
+    - [4.21, Very High]
+    - [3.41, High]
+    - [2.61, Moderate]
+    - [1.81, Low]
+    - [1.00, Very Low]
+
+# --- Input locations (read-only) ---------------------------------------------
+paths:
+  raw: data/raw
+  shorelines_vector: data/raw/shoreline_changes/Shoreline Changes.shp
+  risk_legacy: data/raw/risk_zip/Aparri_MultiTemporal_Erosion_Risk_1990_2025.shp
+  barangays_all: data/raw/Aparri/Aparri Barangays.shp
+  barangays_study: data/raw/Aparri/Aparri_Brgy_Study.shp
+  gee_dir: data/raw/gee_outputs
+  gee_stats_csv: data/raw/gee_outputs/Aparri_Barangay_Erosion_Statistics_1990_2025.csv
+  qgz: data/raw/Aparri/Aparr_Project.qgz
+  interim: data/interim
+  processed: data/processed
+  outputs: outputs

@@ -1,0 +1,37 @@
+[project]
+name = "aparri"
+version = "0.1.0"
+description = "Aparri coastal erosion: audited, reproducible shoreline-change pipeline for a CE thesis"
+requires-python = ">=3.11"
+dependencies = [
+  "geopandas>=0.14",
+  "shapely>=2.0",
+  "pyproj>=3.6",
+  "pandas>=2.1",
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "statsmodels>=0.14",
+  "matplotlib>=3.8",
+  "openpyxl>=3.1",
+  "pyyaml>=6.0",
+  "rasterio>=1.3",
+  "scikit-image>=0.22",
+  "python-docx>=1.1",
+  "pytest>=8.0",
+]
+
+[project.optional-dependencies]
+# Only installed on request (see CLAUDE.md §5): basemaps, extra stats, Landsat download.
+extras = ["contextily", "pingouin", "scikit-posthocs", "pystac-client", "planetary-computer"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning"]
