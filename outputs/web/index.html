@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aparri Erosion Map</title>
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Coastal erosion along eight Aparri barangays, 1990–2025</h1>
+  <p class="disclaimer" role="note"><strong>Academic use.</strong> Classification is based on the shoreline change rate only; it is not a full exposure/vulnerability assessment.
+  Rates come from 30&nbsp;m Landsat-based shorelines, with no measured positional error or image dates supplied (see “Limits”).</p>
+</header>
+<main>
+  <section id="map-wrap" aria-label="Map">
+    <div id="map" role="application" aria-label="Interactive map of shoreline change; use the panel on the right for keyboard access"></div>
+    <div id="yearbar" aria-live="polite">
+      <button id="play" type="button" aria-label="Play the shorelines from 1990 to 2025">▶ Play</button>
+      <label for="year">Shoreline year: <output id="yearout">2025</output></label>
+      <input id="year" type="range" min="0" max="4" step="1" value="4" aria-label="Shoreline year">
+      <label class="chk"><input type="checkbox" id="cumul"> show all earlier years too</label>
+    </div>
+  </section>
+  <aside id="panel" aria-label="Controls and information">
+    <details open><summary>How to read this map</summary>
+      <p>Each coloured line piece is 50&nbsp;m of the open sea-facing shoreline. Its colour is the <b>erosion rate</b> from 1990 to 2025: <span class="sw low"></span>Low (&lt; 2&nbsp;m/yr) · <span class="sw med"></span>Medium (2–5) · <span class="sw high"></span>High (&gt; 5). Blue triangles mark pieces that <em>grew</em> seaward. Grey = not classified (transect fans at the river mouth). A dotted line = low confidence.</p>
+      <p>Click any piece for its numbers. Use the slider or ▶ to see how the shoreline moved; the 1990 line is the reference.</p>
+    </details>
+    <fieldset><legend>Layers</legend>
+      <label><input type="checkbox" id="l-seg" checked> Risk classes (rebuilt)</label>
+      <label><input type="checkbox" id="l-shore" checked> Shorelines by year</label>
+      <label><input type="checkbox" id="l-brgy" checked> Study barangays</label>
+      <label><input type="checkbox" id="l-ctx"> Other barangays</label>
+      <label><input type="checkbox" id="l-tr"> Transects (50&nbsp;m)</label>
+      <label><input type="checkbox" id="l-leg"> Legacy risk polygons <em>(NOT valid, comparison only)</em></label>
+      <label><input type="checkbox" id="l-banks" checked> River banks (not classified)</label>
+    </fieldset>
+    <fieldset><legend>Display</legend>
+      <label for="basemap">Background</label>
+      <select id="basemap"><option value="none">None (works offline)</option><option value="osm">OpenStreetMap (needs internet)</option><option value="sat">Esri satellite (needs internet)</option></select>
+      <label><input type="checkbox" id="cb"> Colour-blind-safe palette</label>
+    </fieldset>
+    <fieldset><legend>Barangay</legend>
+      <label for="brgy">Zoom to</label>
+      <select id="brgy"><option value="">— all —</option></select>
+      <div id="brgy-card" aria-live="polite"></div>
+    </fieldset>
+    <div id="legend" aria-label="Legend"></div>
+    <h2>Kilometres of shoreline per class</h2>
+    <div id="chart" role="img" aria-label="Stacked bar chart of shoreline kilometres per class and barangay"></div>
+    <details><summary>Table 4.2 (accessible table)</summary><div id="table42"></div></details>
+    <details><summary>Limits — read before quoting a number</summary>
+      <ul id="limits"></ul>
+    </details>
+    <p class="small" id="foot"></p>
+  </aside>
+</main>
+<script src="vendor/leaflet.js"></script>
+<script src="data/meta.js"></script><script src="data/segments.js"></script><script src="data/shorelines.js"></script>
+<script src="data/barangays.js"></script><script src="data/context.js"></script><script src="data/transects.js"></script>
+<script src="data/legacy.js"></script><script src="data/table42.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

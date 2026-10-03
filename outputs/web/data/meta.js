@@ -1,0 +1,2 @@
+window.APARRI = window.APARRI || {};
+window.APARRI.meta = {"title":"Aparri coastal erosion risk, 1990–2025","generated":"2026-10-03","shoreline_set":"vector_clean","years":[1990,2000,2010,2020,2025],"spacing_m":50,"thresholds":{"low_max":2.0,"medium_max":5.0},"strip_width_m":100,"what_if_unc_m":30,"acquisition_dates_known":false,"uncertainty_provided":{"georeferencing":false,"digitizing":false,"pixel":false,"tidal":false},"order":["Dodan","Maura","Bulala Norte","San Antonio","Linao","Paddaya","Punta","Bulala Sur"]};
