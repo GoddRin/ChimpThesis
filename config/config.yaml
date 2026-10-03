@@ -94,6 +94,7 @@ risk:
   accretion_class: Low # [DECISION] D-07 accreting transects are Low and tagged "accreting"
   strip_width_m: 100   # [DECISION] D-08 width of the coastal strip used for hectare figures
   length_basis: shoreline_km   # primary area-like measure = km of shoreline per class
+  confidence_scenario_unc_m: 30  # WHAT-IF only (one Landsat pixel per date) used for the confidence column while no measured error exists
 
 # --- Barangays ---------------------------------------------------------------
 barangay_join_tolerance_m: 500

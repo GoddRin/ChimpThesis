@@ -285,7 +285,11 @@ def compute(cfg: dict, parts: gpd.GeoDataFrame, baseline_parts: gpd.GeoDataFrame
     tr["axis_km"] = ((tr[["bx", "by"]].values - p0) @ ab) / 1000.0
     # barangay assignment (nearest study polygon within tolerance) at the mean shoreline position
     if study is not None:
-        dm = np.nanmean(D, axis=1)
+        with np.errstate(all="ignore"):
+            import warnings
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                dm = np.nanmean(D, axis=1)
         dm = np.where(np.isnan(dm), 0.0, dm)
         mx = tr.bx.values + tr.nx.values * dm; my = tr.by.values + tr.ny.values * dm
         pts_s = shapely.points(mx, my)
