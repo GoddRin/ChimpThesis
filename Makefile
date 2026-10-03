@@ -1,6 +1,6 @@
 # Aparri pipeline. `make setup && make test` must pass on a clean checkout.
 PY := .venv/bin/python
-.PHONY: clean setup test audit audit-gee clean-lines raster-lines compare transects risk tables maps sensitivity survey web annex all priority qgis drafts deck landsat annex-docs
+.PHONY: manuscript clean setup test audit audit-gee clean-lines raster-lines compare transects risk tables maps sensitivity survey web annex all priority qgis drafts deck landsat annex-docs
 
 setup:
 	uv venv .venv -q || python3 -m venv .venv
@@ -46,3 +46,6 @@ drafts:           ## Phase 9   : generated draft documents
 annex-docs: annex drafts priority qgis deck   ## Phase 9/10 documents
 deck:             ## Phase 10F : defense slides (PPTX)
 	$(PY) -m aparri.deck
+
+manuscript:       ## Final thesis manuscript (DOCX) + plain-language guide
+	$(PY) -m aparri.manuscript

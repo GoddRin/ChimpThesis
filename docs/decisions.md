@@ -30,3 +30,5 @@ Context: on 2026-10-03 the project owner (IT helper to the thesis group) delegat
 
 ### Updated list (after all phases)
 Q-G1–G4 origin, imagery, dates and indicator of the shoreline lines · Q-G5 who wrote/ran the Earth Engine script · Q-G6 any field data · Q-G7 measured positional error · Q-S1/S2 raw responses and pilot α · Q-S3 sampling and response rate · **Q-S4 decide Ho1/Objective 3 (A/B/C)** · Q-M1 which defense and when · Q-M2 adviser agreement to replace Ch. III/IV GIS content · every item marked [VERIFY CITATION] in `docs/03_thesis_revision_notes.md` (R-32, R-33).
+
+| D-15 | Manuscript: Ho1 reworded to a comparison among structures (option B) and risk-level matching presented as the researchers' proposal (option C); Table 4.8 framework content drafted by the analyst for adviser approval; field observation stated as not done pending student confirmation. | analyst | adviser to confirm | open |

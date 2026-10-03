@@ -41,3 +41,6 @@
 ## Phase 10 (2026-10-03)
 - C `priority.py` (field-inspection ranking), D `qgis_project.py` (Aparri_v2.qgz; not opened in QGIS), E `annex.py` (Technical Annex docx/md), F `deck.py` (PPTX). A and B deliberately not done (D-13).
 - Clean-clone check: `make setup && make test && make all` reproduces identical tables (md5 equal).
+
+## Manuscript (final draft DOCX)
+- `make manuscript` → `outputs/manuscript/Thesis_Manuscript_FINAL_DRAFT.docx` (+ `START_HERE_Guide.docx`). Chapters I–II, questionnaire and survey tables carried from the original; Chapters III–V, abstract, definitions, references and appendices rewritten from the rebuilt results. Yellow brackets = facts only the students can supply. Hypothesis reworded (decision D-15: compare structures; risk-level matching presented as the group's proposal). The original docx is untouched.
