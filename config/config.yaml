@@ -136,3 +136,7 @@ landsat:
   input_dir: data/raw/landsat_v2
   otsu_window_m: 3000          # Otsu threshold is computed in this window around the open coast
   min_images_per_year: 3
+
+# --- Phase 10C: field-inspection priority (erosion information only) ---------------------------
+priority:
+  weights: {rate: 1.0, extent: 1.0}   # [DECISION] equal weights; change and rerun `make priority`

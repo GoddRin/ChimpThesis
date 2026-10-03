@@ -36,3 +36,12 @@ annex:            ## Phase 10E: technical annex
 all: audit audit-gee clean-lines raster-lines transects risk tables maps sensitivity web
 landsat:          ## Phase 3C : sub-pixel shorelines from index rasters exported by scripts/gee_v2.js
 	$(PY) -m aparri.landsat
+priority:         ## Phase 10C : barangay ranking for field inspection (weights in config)
+	$(PY) -m aparri.priority
+qgis:             ## Phase 10D : QGIS project
+	$(PY) -m aparri.qgis_project
+drafts:           ## Phase 9   : generated draft documents
+	$(PY) -m aparri.drafts
+annex-docs: annex drafts priority qgis deck   ## Phase 9/10 documents
+deck:             ## Phase 10F : defense slides (PPTX)
+	$(PY) -m aparri.deck
