@@ -1,5 +1,7 @@
 # 00 — Reconnaissance report (read-only)
 
+> **Status note (2026-10-03, end of project run).** This is the *first-pass* reconnaissance, written before any code was run. It is kept as a record. Later documents supersede it where they differ: `docs/01_data_audit.md`, `docs/01b_gee_audit.md` (corrections: High pixels inside the eight official barangay polygons are ~1.4 ha, not 0; 117 of 124 risk polygons are pixel cells and 7 are hand-drawn), `docs/decisions.md`, and the project `README.md` for the final results.
+
 **Project:** Aparri coastal erosion — GIS rebuild & thesis support
 **Date:** 2026-10-03  **Status:** recon only. No data was modified. This file is the only thing written to the repo.
 **Labels used below:** **[CONFIRMED]** = I checked it with code or by reading the file. **[HYPOTHESIS]** = plausible but not proven. **[VERIFY CITATION]** = literature claim I could not check offline.

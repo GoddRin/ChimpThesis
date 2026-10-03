@@ -268,6 +268,8 @@ def run() -> None:  # pragma: no cover
     ensure_dir("data/processed")
     primary_seg.to_file(repo_path("data/processed/risk_segments.gpkg"), layer="risk_segments", driver="GPKG")
     primary_tr.to_file(repo_path("data/processed/transects.gpkg"), layer="transects", driver="GPKG")
+    import shutil
+    shutil.copy(repo_path(f"data/processed/{cfg['shoreline_set']}/shoreline_points.csv"), repo_path("data/processed/shoreline_points.csv"))
     lay = ensure_dir("outputs/layers")
     gp = lay / "Aparri_Erosion_Risk_v2.gpkg"
     if gp.exists():

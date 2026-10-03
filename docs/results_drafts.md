@@ -4,7 +4,7 @@
 
 ## Multi-Temporal Shoreline Change (Figure 4.1)
 
-Figure 4.1 shows the open-coast shorelines of 1990, 2000, 2010, 2020 and 2025 along the 20.2 km of coast that has valid transects (river banks are drawn dashed and were not analysed). Along the straight coast from Bulala Sur to Bulala Norte the 1990 shoreline lies seaward of the later shorelines (mean net movement 1990–2025 of -96 m at Bulala Sur and -117 m at Bulala Norte), whereas the mean net movement was -49 m at Maura, -68 m at Dodan and -49 m at Paddaya. At the Linao spit and the river mouth the lines diverge and cross each other; transects there are not comparable and were left unclassified.
+Figure 4.1 shows the open-coast shorelines of 1990, 2000, 2010, 2020 and 2025 along the 20.2 km of open coast covered by transects (river banks are drawn dashed and were not analysed). Along the straight coast from Bulala Sur to Bulala Norte the 1990 shoreline lies seaward of the later shorelines (mean net movement 1990–2025 of -96 m at Bulala Sur and -117 m at Bulala Norte), whereas the mean net movement was -49 m at Maura, -68 m at Dodan and -49 m at Paddaya. At the Linao spit and the river mouth the lines diverge and cross each other; transects there are not comparable and were left unclassified.
 
 ## Computation of the shoreline change rate
 

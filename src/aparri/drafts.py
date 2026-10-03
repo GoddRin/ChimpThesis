@@ -165,7 +165,7 @@ def results(f: dict) -> str:
 
 ## Multi-Temporal Shoreline Change (Figure 4.1)
 
-Figure 4.1 shows the open-coast shorelines of 1990, 2000, 2010, 2020 and 2025 along the {ktot['Classified shoreline (km)'] + ktot['Unclassified (km)']:.1f} km of coast that has valid transects (river banks are drawn dashed and were not analysed). Along the straight coast from Bulala Sur to Bulala Norte the 1990 shoreline lies seaward of the later shorelines (mean net movement 1990–2025 of {f['nsm_by_b'].get('Bulala Sur', np.nan):+.0f} m at Bulala Sur and {f['nsm_by_b'].get('Bulala Norte', np.nan):+.0f} m at Bulala Norte), whereas the mean net movement was {f['nsm_by_b'].get('Maura', np.nan):+.0f} m at Maura, {f['nsm_by_b'].get('Dodan', np.nan):+.0f} m at Dodan and {f['nsm_by_b'].get('Paddaya', np.nan):+.0f} m at Paddaya. At the Linao spit and the river mouth the lines diverge and cross each other; transects there are not comparable and were left unclassified.
+Figure 4.1 shows the open-coast shorelines of 1990, 2000, 2010, 2020 and 2025 along the {ktot['Classified shoreline (km)'] + ktot['Unclassified (km)']:.1f} km of open coast covered by transects (river banks are drawn dashed and were not analysed). Along the straight coast from Bulala Sur to Bulala Norte the 1990 shoreline lies seaward of the later shorelines (mean net movement 1990–2025 of {f['nsm_by_b'].get('Bulala Sur', np.nan):+.0f} m at Bulala Sur and {f['nsm_by_b'].get('Bulala Norte', np.nan):+.0f} m at Bulala Norte), whereas the mean net movement was {f['nsm_by_b'].get('Maura', np.nan):+.0f} m at Maura, {f['nsm_by_b'].get('Dodan', np.nan):+.0f} m at Dodan and {f['nsm_by_b'].get('Paddaya', np.nan):+.0f} m at Paddaya. At the Linao spit and the river mouth the lines diverge and cross each other; transects there are not comparable and were left unclassified.
 
 ## Computation of the shoreline change rate
 
@@ -307,9 +307,53 @@ def adviser(f: dict) -> str:
 """
 
 
+def readme(f: dict) -> str:
+    ext = f["ext"]; u = f["u"]; km = f["km_tot"]
+    return f"""# Aparri coastal-erosion GIS — rebuilt, audited and documented
+
+Support pack for the thesis **“Development of Construction Management Framework for Shoreline Protection Structures Based on Coastal Erosion Risk Levels in Aparri, Cagayan”** (CSU–Carig). The students own the thesis; everything here is a *draft for them to check, understand and defend*.
+
+## Start here (open these first)
+| What | Where |
+|---|---|
+| **Interactive map** (works offline; double-click) | `outputs/web/index.html` |
+| **Table 4.2** (Excel / Word-ready) | `outputs/tables/Table_4_2_barangay_results.xlsx` · `.docx` |
+| **Figures 4.1 / 4.2 / profile** (300 dpi) | `outputs/maps/Fig_4_1_v2_*.png` · `Fig_4_2_v2_*.png` · `Fig_4_3_*.png` |
+| **GIS defense slides** | `outputs/defense/Aparri_GIS_defense_slides.pptx` |
+| **Defense Q&A (25 questions)** | `docs/04_defense_qa.md` |
+| **Memo for the adviser** | `docs/for_the_adviser.md` |
+| **Edit list for the manuscript (38 items)** | `docs/03_thesis_revision_notes.md` |
+| QGIS project | `outputs/layers/Aparri_v2.qgz` (see `README_QGIS.md`) |
+| Technical annex for the appendix | `outputs/reports/Technical_Annex_GIS.docx` |
+
+## What was found (short)
+1. **The original GIS results cannot be used.** The risk polygons, the Earth Engine statistics and the raster change layers are inconsistent with each other and with the written method (`docs/01_data_audit.md`, `docs/01b_gee_audit.md`): {f['audit_hand']} hand-drawn polygons carry every “Medium (2.59)” and “High” label, {f['gee_acc_sea']:.0f} % of the raster “accretion” is open sea, and the barangay statistics are 1 km circles around points.
+2. **Rebuilt analysis** (cleaned shoreline lines → {f['n_tr']} transects every 50 m → EPR and LRR → the thesis’ own class limits): along the {km["Classified shoreline (km)"]:.1f} km of classified open coast, {km['Low risk (km)']:.1f} km is Low, {km['Medium risk (km)']:.1f} km Medium and **{km['High risk (km)']:.1f} km High**. Median EPR {f['epr_median']:+.2f} m/yr; the fastest barangay is Bulala Norte ({ext.loc['Bulala Norte','Mean EPR (m/yr)']:+.2f} m/yr). **The old “High along Bulala” is replaced by Medium.**
+3. **How sure?** An independent shoreline set gives the same class for {f['src_agree']:.0f} % of {f['src_n']} transects. But a 30 m pixel is ±{u:.2f} m/yr over 35 years, so Low-versus-Medium is uncertain for much of the coast; Bulala Norte is the clearest case. Class shares do not depend on technical choices (≤ {f['max_shift']:.1f} points) but do depend on the 2 and 5 m/yr limits themselves.
+4. **Survey part:** Table 4.4 is arithmetically consistent (one 0.0001 rounding slip), the ranking is robust to criterion weights ({f['ws_first_seawall']:.0f} % Seawall first), but the questionnaire has **no risk-level dimension**, so Objective 3 and Ho1 cannot be tested as written (`docs/06_survey_statistics.md`).
+
+## What the students must supply (nothing here invents these)
+Origin/dates/indicator of the shoreline lines · measured positional error and tide · raw survey responses and pilot α · a decision on Ho1/Objective 3 · field verification (form and 20 points provided) · checks of every `[VERIFY CITATION]` · the adviser’s agreement. Full list: `docs/decisions.md`.
+
+## What was *not* done (and why)
+Landsat re-derivation (no route to the satellite catalogues from the analysis environment; `scripts/gee_v2.js` is ready) · opening the QGIS project in QGIS (not installed) · exposure overlay and projections (see `docs/decisions.md` D-13) · any analysis of survey responses (none supplied) · field validation.
+
+## Run it yourself
+```
+make setup && make test     # {f.get('n_tests', '85')} automated tests
+make all                    # rebuilds every table, map, document, the web map, deck and annex (~1 min)
+```
+All parameters: `config/config.yaml`. Raw data (`data/raw/`, read-only, SHA-256 manifest). Rules: `CLAUDE.md`. Decisions and open questions: `docs/decisions.md`. Changes: `docs/CHANGELOG.md`.
+
+## Folder map
+`config/` parameters · `src/aparri/` code · `tests/` tests (synthetic data only under `tests/fixtures/`) · `data/raw` inputs · `data/interim` cleaned shorelines + QGIS review package · `data/processed` transects and risk segments (per shoreline set) · `outputs/` tables, maps, layers, web, defense, field_validation, reports · `docs/` audit, method, drafts, Q&A · `scripts/gee_v2.js` · `data/templates/` blank survey and factors templates.
+"""
+
+
 def run() -> None:  # pragma: no cover
     cfg = load_config()
     f = facts(cfg)
+    (REPO_ROOT / "README.md").write_text(readme(f), encoding="utf-8"); print("wrote README.md")
     docs = REPO_ROOT / "docs"
     for name, text in (("methods_draft.md", methods(f)), ("results_drafts.md", results(f)), ("04_defense_qa.md", qa(f)), ("for_the_adviser.md", adviser(f))):
         (docs / name).write_text(text, encoding="utf-8")

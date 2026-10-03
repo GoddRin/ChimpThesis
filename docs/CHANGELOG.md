@@ -25,3 +25,19 @@
 
 ## Phase 5 (2026-10-03)
 - `risk.py`, `tables.py`, `maps.py`: classes, segments, Table 4.2 (xlsx/csv/docx), Figs 4.1/4.2 v2, EPR profile, legacy-vs-rebuilt; QGIS style file.
+
+## Phase 6 (2026-10-03)
+- `sensitivity.py`: 11 scenarios, EPR vs LRR, source agreement (92 % same class), empirical per-date error proposals (not applied), 20 field-verification points + form.
+
+## Phase 7 (2026-10-03)
+- `stats_survey.py`: schema, template, validator, alpha, weighted mean, Friedman/Wilcoxon-Holm, Kruskal-Wallis/Dunn-Holm, ranking by risk level (if data have it), weight sensitivity of the published means. 16 tests with hand computations; synthetic data refused for outputs/.
+
+## Phase 8 (2026-10-03)
+- `web.py`: offline Leaflet map (`outputs/web/index.html`), year slider/animation, popups, barangay zoom + Table 4.2 row, colour-blind palette, accessible table; headless smoke test.
+
+## Phase 9 (2026-10-03)
+- `docs/03_thesis_revision_notes.md` (38 items), `methods_draft.md`, `results_drafts.md`, `chapter5_skeleton.md`, `erosion_factors_plan.md`, `04_defense_qa.md` (25 Q&A), `for_the_adviser.md`.
+
+## Phase 10 (2026-10-03)
+- C `priority.py` (field-inspection ranking), D `qgis_project.py` (Aparri_v2.qgz; not opened in QGIS), E `annex.py` (Technical Annex docx/md), F `deck.py` (PPTX). A and B deliberately not done (D-13).
+- Clean-clone check: `make setup && make test && make all` reproduces identical tables (md5 equal).

@@ -1,6 +1,6 @@
 # Aparri pipeline. `make setup && make test` must pass on a clean checkout.
 PY := .venv/bin/python
-.PHONY: setup test audit audit-gee clean-lines raster-lines compare transects risk tables maps sensitivity survey web annex all priority qgis drafts deck landsat annex-docs
+.PHONY: clean setup test audit audit-gee clean-lines raster-lines compare transects risk tables maps sensitivity survey web annex all priority qgis drafts deck landsat annex-docs
 
 setup:
 	uv venv .venv -q || python3 -m venv .venv
@@ -13,6 +13,7 @@ audit:            ## Phase 2  : forensic audit of legacy lines + risk polygons
 	$(PY) -m aparri.audit
 audit-gee:        ## Phase 2B : forensic audit of the Earth Engine pipeline
 	$(PY) -m aparri.audit_gee
+clean: clean-lines  ## alias (CLAUDE.md name)
 clean-lines:      ## Phase 3A : clean the vector shorelines
 	$(PY) -m aparri.clean
 raster-lines:     ## Phase 3B : lines traced from the Earth Engine rasters + comparison
