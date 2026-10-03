@@ -9,7 +9,7 @@
 3. **48 polygons break the thesis rule itself** ("Medium" but EPR = 0.857 < 2) and **every EPR is positive**, i.e. *accretion* under the thesis sign convention.
 4. **They cannot be reproduced from the Earth Engine rasters**: under the "High" polygons the raster has *no* High pixel (EPR between -3.09 and 0.86 m/yr); 20.7 ha lie outside the raster extent.
 5. **Shoreline lines (B): partly usable as context, not as measurements.** Years have 3–6 unjoined fragments, vertex spacing from 85 to 255 m, the 2010 coast is digitised **twice** in one stretch (56.7 km listed, only ≈ 39.1 km unique), and one feature has the year "Hig".
-6. **Thesis text vs data:** the "High in Bulala Sur" statement has **0.00 ha** behind it under a tolerance join; the legacy layer puts High risk in Bulala Norte and Linao instead (§6).
+6. **Thesis text vs data:** the 2 hand-drawn High polygons do lie at Bulala Sur (8.3 ha) and Bulala Norte (12.0 ha), as the thesis says, but they also put 15.4 ha of High in **Linao** (thesis: Low) and no Medium in Bulala Norte (thesis: Medium); the Earth Engine raster shows **no High on the Bulala coast at all** (§6).
 7. **No demonstrated link** between Fig. 4.1/4.2, the lines, the polygons and the rasters: 7 of 9 local layer links in the QGIS project are broken and no print layout locks its layer set (§7).
 8. **Verdict — can we cite the legacy numbers? Risk polygons: NO. Shoreline lines: PARTLY** (as an unverified visual reference and as a candidate input to the rebuild, after cleaning; never as published rates).
 
@@ -237,7 +237,7 @@ Contradictions found:
 * The legacy layer puts 15.4 ha of High risk in Linao; the thesis does not list High risk there.
 * The legacy layer puts 9.3 ha of Medium risk in Linao; the thesis does not list it.
 
-(The Earth Engine barangay table is audited in `docs/01b_gee_audit.md`; the Earth Engine rasters give **0 ha of High** inside every official barangay polygon.)
+(The Earth Engine barangay table is audited in `docs/01b_gee_audit.md`; the Earth Engine rasters give only ≈ 1.4 ha of High inside the eight official polygons — Linao 1.27 ha, Maura 0.17 ha — and **none in Bulala Sur or Bulala Norte**.)
 
 ## 7. QGIS-project forensics
 

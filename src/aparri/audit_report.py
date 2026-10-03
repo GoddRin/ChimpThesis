@@ -54,11 +54,11 @@ def render(c: dict) -> Path:
         if k not in st:
             st[k] = 0.0
     st = st[["Low", "Medium", "High"]]
-    ct = c["claims_tab"]
     nobody = [b for b in c["cfg"]["study_barangays"] if b not in st.index]
     hig_c = hc.sort_values("median_dist_to_hig_m") if len(hc) else hc
     hz = hc.sort_values("length_of_year_inside_hig_zone_m") if len(hc) else hc
 
+    ct = c["claims_tab"]
     n_missing_links = int((c["qf"]["layers"].found_on_disk == False).sum())  # noqa: E712
     n_local = int(c["qf"]["layers"].is_local_file.sum())
     lay = c["qf"]["layouts"]
@@ -83,7 +83,7 @@ def render(c: dict) -> Path:
 3. **{t['n_violations']} polygons break the thesis rule itself** ("Medium" but EPR = 0.857 < 2) and **every EPR is positive**, i.e. *accretion* under the thesis sign convention.
 4. **They cannot be reproduced from the Earth Engine rasters**: under the "High" polygons the raster has *no* High pixel (EPR between {hig_under['min']:.2f} and {hig_under['max']:.2f} m/yr); {rr['polygon_area_outside_raster_ha']:.1f} ha lie outside the raster extent.
 5. **Shoreline lines (B): partly usable as context, not as measurements.** Years have 3–6 unjoined fragments, vertex spacing from {yt.mean_vertex_spacing_m.min():.0f} to {yt.mean_vertex_spacing_m.max():.0f} m, the 2010 coast is digitised **twice** in one stretch ({y2010.total_km:.1f} km listed, only ≈ {y2010.unique_km:.1f} km unique), and one feature has the year "Hig".
-6. **Thesis text vs data:** the "High in Bulala Sur" statement has **0.00 ha** behind it under a tolerance join; the legacy layer puts High risk in Bulala Norte and Linao instead (§6).
+6. **Thesis text vs data:** the 2 hand-drawn High polygons do lie at Bulala Sur ({ct.loc['Bulala Sur','High']:.1f} ha) and Bulala Norte ({ct.loc['Bulala Norte','High']:.1f} ha), as the thesis says, but they also put {ct.loc['Linao','High']:.1f} ha of High in **Linao** (thesis: Low) and no Medium in Bulala Norte (thesis: Medium); the Earth Engine raster shows **no High on the Bulala coast at all** (§6).
 7. **No demonstrated link** between Fig. 4.1/4.2, the lines, the polygons and the rasters: {n_missing_links} of {n_local} local layer links in the QGIS project are broken and no print layout locks its layer set (§7).
 8. **Verdict — can we cite the legacy numbers? Risk polygons: NO. Shoreline lines: PARTLY** (as an unverified visual reference and as a candidate input to the rebuild, after cleaning; never as published rates).
 
@@ -212,7 +212,7 @@ Contradictions found:
 
 """ + "\n".join(f"* {n}" for n in c["notes"]) + f"""
 
-(The Earth Engine barangay table is audited in `docs/01b_gee_audit.md`; the Earth Engine rasters give **0 ha of High** inside every official barangay polygon.)
+(The Earth Engine barangay table is audited in `docs/01b_gee_audit.md`; the Earth Engine rasters give only ≈ 1.4 ha of High inside the eight official polygons — Linao 1.27 ha, Maura 0.17 ha — and **none in Bulala Sur or Bulala Norte**.)
 
 ## 7. QGIS-project forensics
 
