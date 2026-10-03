@@ -1,0 +1,11 @@
+# Python / env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+# Scratch & caches (regenerable)
+data/interim/cache/
+*.tmp
+.DS_Store
+# NOTE: config/, docs/, data/raw/, data/processed/ and outputs/ are tracked on purpose.

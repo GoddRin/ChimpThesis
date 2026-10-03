@@ -1,0 +1,14 @@
+action,year,feature_id,before_m,after_m,removed_m,reason,x,y,needs_human_review
+quarantine,Hig,19,3143.07,0.0,3143.07,year value 'Hig' is not a year; excluded until a human sets manual_year_overrides.feature_19,352929.9,2031578.3,True
+loop_kept,1990,0,64.99,64.99,0.0,self-crossing loop of 65 m >= min_loop_m: kept (probably real river-mouth geometry); please check,353552.6,2030639.0,True
+loop_kept,1990,0,539.64,539.64,0.0,self-crossing loop of 540 m >= min_loop_m: kept (probably real river-mouth geometry); please check,351774.0,2031341.5,True
+year_summary,1990,3->3 chains,35409.57,35409.57,0.0,3 input features -> 3 continuous chains,,,False
+loop_kept,2000,6,106.26,106.26,0.0,self-crossing loop of 106 m >= min_loop_m: kept (probably real river-mouth geometry); please check,353042.3,2031062.7,True
+year_summary,2000,3->3 chains,41077.97,41077.97,-0.0,3 input features -> 3 continuous chains,,,False
+duplicate_stretch_removed,2010,10,7170.02,0.0,7170.02,91% of this fragment lies within 60 m of fragment(s) [3] (same coast digitised twice); the longer continuous version is kept,,,True
+duplicate_stretch_removed,2010,11,11111.06,0.0,11111.06,100% of this fragment lies within 60 m of fragment(s) [3] (same coast digitised twice); the longer continuous version is kept,,,True
+year_summary,2010,2->2 chains,56723.81,38442.72,18281.09,4 input features -> 2 continuous chains,,,False
+year_summary,2020,3->3 chains,35523.14,35523.14,0.0,3 input features -> 3 continuous chains,,,False
+loop_kept,2025,17,1715.43,1715.43,0.0,self-crossing loop of 1715 m >= min_loop_m: kept (probably real river-mouth geometry); please check,356324.3,2028164.4,True
+endpoints_joined,2025,"([13], [14])",0.48,0.0,0.48,end points 0.48 m apart (<= snap_tol_m=5) joined,,,False
+year_summary,2025,6->5 chains,40833.63,40834.11,-0.48,"6 input features -> 5 continuous chains; >3 because the remaining gaps (> snap_tol_m) are real breaks in the digitised line (river mouth, islands), not joined on purpose",,,False

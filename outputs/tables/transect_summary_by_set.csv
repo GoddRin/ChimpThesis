@@ -1,0 +1,3 @@
+transects,valid_epr,flagged,with_crossing,with_sharp_bend,missing_first_or_last,multi_hit,epr_mean,epr_median,epr_min,epr_max,pct_eroding,set,T_source,unc_status
+415,373,48,38,4,13,20,-1.5688714668709305,-1.4551714285714281,-3.4942285714285717,5.2992857142857135,94.10187667560321,vector_clean,year_difference,NOT_PROVIDED
+415,254,263,38,4,132,118,-1.2218538807649044,-1.307471428571429,-7.3993714285714285,3.794199999999999,84.64566929133859,raster_clean,year_difference,PARTIAL

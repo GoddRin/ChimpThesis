@@ -1,0 +1,635 @@
+action,year,feature_id,before_m,after_m,removed_m,reason,x,y,needs_human_review
+speckle_rings_removed,1990,raster,17.0,0.0,17.0,17 closed rings enclosing < 120 px (~10 ha) removed (holes/islets of the water mask),,,False
+skeletonize,1990,raster,2413.0,1117.0,1296.0,edge band 2413 px -> centre line 1117 px,,,False
+spurs_pruned,1990,raster,3.0,0.0,3.0,3 branches shorter than 4 px (~120 m) that end freely were removed,,,False
+component_dropped,1990,raster,779.25,0.0,779.25,does not touch the open-coast zone (pond / inland water / open-sea speckle),351748.8,2031312.9,False
+component_dropped,1990,raster,100.89,0.0,100.89,shorter than 300 m,356157.5,2029586.9,False
+component_dropped,1990,raster,100.89,0.0,100.89,shorter than 300 m,356272.8,2028214.0,False
+component_dropped,1990,raster,2270.21,0.0,2270.21,does not touch the open-coast zone (pond / inland water / open-sea speckle),356669.1,2027702.0,False
+component_dropped,1990,raster,486.28,0.0,486.28,does not touch the open-coast zone (pond / inland water / open-sea speckle),351810.4,2031638.6,False
+component_dropped,1990,raster,231.6,0.0,231.6,shorter than 300 m,350136.8,2030405.0,False
+component_dropped,1990,raster,29.82,0.0,29.82,shorter than 300 m,354982.2,2027802.8,False
+component_dropped,1990,raster,41.24,0.0,41.24,shorter than 300 m,355912.5,2028422.1,False
+component_dropped,1990,raster,2692.09,0.0,2692.09,does not touch the open-coast zone (pond / inland water / open-sea speckle),356678.4,2028338.8,False
+component_dropped,1990,raster,160.54,0.0,160.54,shorter than 300 m,354403.7,2029920.5,False
+component_dropped,1990,raster,155.16,0.0,155.16,shorter than 300 m,350370.8,2030319.1,False
+component_dropped,1990,raster,85.44,0.0,85.44,shorter than 300 m,357968.3,2029107.7,False
+component_dropped,1990,raster,28.48,0.0,28.48,shorter than 300 m,356520.3,2029715.0,False
+component_dropped,1990,raster,709.91,0.0,709.91,does not touch the open-coast zone (pond / inland water / open-sea speckle),351110.9,2031305.3,False
+component_dropped,1990,raster,128.02,0.0,128.02,shorter than 300 m,354152.2,2030851.0,False
+component_dropped,1990,raster,139.44,0.0,139.44,shorter than 300 m,359064.9,2029120.7,False
+component_dropped,1990,raster,59.65,0.0,59.65,shorter than 300 m,350190.7,2030658.1,False
+component_dropped,1990,raster,167.91,0.0,167.91,shorter than 300 m,352341.2,2030974.6,False
+component_dropped,1990,raster,29.82,0.0,29.82,shorter than 300 m,354094.5,2030941.2,False
+component_dropped,1990,raster,28.48,0.0,28.48,shorter than 300 m,352064.7,2031776.9,False
+component_dropped,1990,raster,29.82,0.0,29.82,shorter than 300 m,354203.5,2030284.2,False
+component_dropped,1990,raster,41.24,0.0,41.24,shorter than 300 m,354387.4,2030133.7,False
+component_dropped,1990,raster,29.82,0.0,29.82,shorter than 300 m,354322.8,2030999.1,False
+component_dropped,1990,raster,41.24,0.0,41.24,shorter than 300 m,355998.6,2028511.0,False
+component_dropped,1990,raster,28.48,0.0,28.48,shorter than 300 m,355722.9,2029721.0,False
+component_dropped,1990,raster,129.36,0.0,129.36,shorter than 300 m,354137.9,2031072.6,False
+component_dropped,1990,raster,28.48,0.0,28.48,shorter than 300 m,351979.3,2031777.6,False
+component_dropped,1990,raster,59.65,0.0,59.65,shorter than 300 m,356265.5,2028016.9,False
+component_dropped,1990,raster,41.24,0.0,41.24,shorter than 300 m,356026.2,2028391.5,False
+component_dropped,1990,raster,253.35,0.0,253.35,shorter than 300 m,352663.7,2030599.1,False
+component_dropped,1990,raster,59.65,0.0,59.65,shorter than 300 m,356409.3,2028194.7,False
+year_summary,1990,7 chains,77670.0,27429.32,50240.68,"7 traced chains, 27.4 km",,,False
+speckle_rings_removed,2000,raster,15.0,0.0,15.0,15 closed rings enclosing < 120 px (~10 ha) removed (holes/islets of the water mask),,,False
+skeletonize,2000,raster,2513.0,1158.0,1355.0,edge band 2513 px -> centre line 1158 px,,,False
+spurs_pruned,2000,raster,5.0,0.0,5.0,5 branches shorter than 4 px (~120 m) that end freely were removed,,,False
+component_dropped,2000,raster,3441.98,0.0,3441.98,does not touch the open-coast zone (pond / inland water / open-sea speckle),356476.1,2027905.1,False
+component_dropped,2000,raster,29.82,0.0,29.82,shorter than 300 m,355510.3,2029856.8,False
+component_dropped,2000,raster,71.06,0.0,71.06,shorter than 300 m,355812.5,2029479.3,False
+component_dropped,2000,raster,56.96,0.0,56.96,shorter than 300 m,351620.4,2031392.6,False
+component_dropped,2000,raster,476.23,0.0,476.23,does not touch the open-coast zone (pond / inland water / open-sea speckle),354318.5,2029778.4,False
+component_dropped,2000,raster,56.96,0.0,56.96,shorter than 300 m,355620.7,2029393.7,False
+component_dropped,2000,raster,29.82,0.0,29.82,shorter than 300 m,355765.0,2029646.1,False
+component_dropped,2000,raster,71.06,0.0,71.06,shorter than 300 m,355692.2,2030225.8,False
+component_dropped,2000,raster,426.38,0.0,426.38,does not touch the open-coast zone (pond / inland water / open-sea speckle),350724.3,2030716.8,False
+component_dropped,2000,raster,184.98,0.0,184.98,shorter than 300 m,358864.1,2029081.9,False
+component_dropped,2000,raster,28.48,0.0,28.48,shorter than 300 m,354100.7,2029882.3,False
+component_dropped,2000,raster,253.35,0.0,253.35,shorter than 300 m,350388.9,2030325.1,False
+component_dropped,2000,raster,69.72,0.0,69.72,shorter than 300 m,352297.9,2030961.0,False
+component_dropped,2000,raster,41.24,0.0,41.24,shorter than 300 m,350602.1,2030461.0,False
+component_dropped,2000,raster,98.2,0.0,98.2,shorter than 300 m,357231.7,2029635.1,False
+component_dropped,2000,raster,123.71,0.0,123.71,shorter than 300 m,350009.7,2031181.4,False
+component_dropped,2000,raster,28.48,0.0,28.48,shorter than 300 m,355720.6,2029422.7,False
+component_dropped,2000,raster,3831.09,0.0,3831.09,does not touch the open-coast zone (pond / inland water / open-sea speckle),356406.7,2028804.1,False
+component_dropped,2000,raster,348.57,0.0,348.57,does not touch the open-coast zone (pond / inland water / open-sea speckle),350977.5,2031410.7,False
+component_dropped,2000,raster,140.79,0.0,140.79,shorter than 300 m,355130.0,2027375.1,False
+component_dropped,2000,raster,440.38,0.0,440.38,does not touch the open-coast zone (pond / inland water / open-sea speckle),350153.4,2030512.3,False
+component_dropped,2000,raster,59.65,0.0,59.65,shorter than 300 m,355737.4,2029750.7,False
+component_dropped,2000,raster,1056.77,0.0,1056.77,does not touch the open-coast zone (pond / inland water / open-sea speckle),351588.0,2031286.1,False
+component_dropped,2000,raster,110.96,0.0,110.96,shorter than 300 m,357968.4,2029118.8,False
+component_dropped,2000,raster,238.6,0.0,238.6,shorter than 300 m,355480.4,2029663.1,False
+component_dropped,2000,raster,130.71,0.0,130.71,shorter than 300 m,351711.7,2031574.8,False
+component_dropped,2000,raster,41.24,0.0,41.24,shorter than 300 m,354329.1,2029955.2,False
+component_dropped,2000,raster,113.91,0.0,113.91,shorter than 300 m,352724.8,2030578.8,False
+year_summary,2000,7 chains,81330.0,26215.34,55114.66,"7 traced chains, 26.2 km",,,False
+speckle_rings_removed,2010,raster,9.0,0.0,9.0,9 closed rings enclosing < 120 px (~10 ha) removed (holes/islets of the water mask),,,False
+skeletonize,2010,raster,2262.0,1074.0,1188.0,edge band 2262 px -> centre line 1074 px,,,False
+spurs_pruned,2010,raster,3.0,0.0,3.0,3 branches shorter than 4 px (~120 m) that end freely were removed,,,False
+component_dropped,2010,raster,2115.13,0.0,2115.13,does not touch the open-coast zone (pond / inland water / open-sea speckle),356602.5,2028478.5,False
+component_dropped,2010,raster,112.31,0.0,112.31,shorter than 300 m,355149.5,2027324.3,False
+component_dropped,2010,raster,41.24,0.0,41.24,shorter than 300 m,351177.7,2031232.0,False
+component_dropped,2010,raster,932.46,0.0,932.46,does not touch the open-coast zone (pond / inland water / open-sea speckle),357115.5,2027418.4,False
+component_dropped,2010,raster,100.89,0.0,100.89,shorter than 300 m,356052.6,2029229.7,False
+component_dropped,2010,raster,6901.18,0.0,6901.18,does not touch the open-coast zone (pond / inland water / open-sea speckle),353678.9,2029863.8,False
+component_dropped,2010,raster,29.83,0.0,29.83,shorter than 300 m,351276.9,2031171.6,False
+component_dropped,2010,raster,29.82,0.0,29.82,shorter than 300 m,355369.3,2030036.8,False
+component_dropped,2010,raster,560.43,0.0,560.43,does not touch the open-coast zone (pond / inland water / open-sea speckle),355597.6,2029900.7,False
+component_dropped,2010,raster,119.3,0.0,119.3,shorter than 300 m,350131.4,2030360.3,False
+component_dropped,2010,raster,155.15,0.0,155.15,shorter than 300 m,355503.3,2030195.9,False
+component_dropped,2010,raster,3016.94,0.0,3016.94,does not touch the open-coast zone (pond / inland water / open-sea speckle),356510.4,2027892.2,False
+year_summary,2010,2 chains,71010.0,22437.67,48572.33,"2 traced chains, 22.4 km",,,False
+speckle_rings_removed,2020,raster,213.0,0.0,213.0,213 closed rings enclosing < 120 px (~10 ha) removed (holes/islets of the water mask),,,False
+skeletonize,2020,raster,5268.0,2311.0,2957.0,edge band 5268 px -> centre line 2311 px,,,False
+spurs_pruned,2020,raster,35.0,0.0,35.0,35 branches shorter than 4 px (~120 m) that end freely were removed,,,False
+component_dropped,2020,raster,170.59,0.0,170.59,shorter than 300 m,354424.7,2033545.2,False
+component_dropped,2020,raster,543.23,0.0,543.23,does not touch the open-coast zone (pond / inland water / open-sea speckle),356985.3,2031621.6,False
+component_dropped,2020,raster,971.2,0.0,971.2,does not touch the open-coast zone (pond / inland water / open-sea speckle),357539.1,2031691.6,False
+component_dropped,2020,raster,29.82,0.0,29.82,shorter than 300 m,360290.1,2033102.2,False
+component_dropped,2020,raster,838.86,0.0,838.86,does not touch the open-coast zone (pond / inland water / open-sea speckle),354490.7,2033208.7,False
+component_dropped,2020,raster,128.02,0.0,128.02,shorter than 300 m,357938.8,2031091.6,False
+component_dropped,2020,raster,585.55,0.0,585.55,does not touch the open-coast zone (pond / inland water / open-sea speckle),359350.4,2030661.9,False
+component_dropped,2020,raster,153.53,0.0,153.53,shorter than 300 m,354945.5,2031726.2,False
+component_dropped,2020,raster,589.86,0.0,589.86,does not touch the open-coast zone (pond / inland water / open-sea speckle),357727.2,2031011.9,False
+component_dropped,2020,raster,129.37,0.0,129.37,shorter than 300 m,357072.9,2027471.6,False
+component_dropped,2020,raster,59.65,0.0,59.65,shorter than 300 m,358049.0,2030389.6,False
+component_dropped,2020,raster,171.95,0.0,171.95,shorter than 300 m,357907.6,2030524.9,False
+component_dropped,2020,raster,1191.13,0.0,1191.13,does not touch the open-coast zone (pond / inland water / open-sea speckle),355924.7,2031521.7,False
+component_dropped,2020,raster,71.06,0.0,71.06,shorter than 300 m,352387.6,2030101.8,False
+component_dropped,2020,raster,128.02,0.0,128.02,shorter than 300 m,362451.4,2028940.6,False
+component_dropped,2020,raster,98.19,0.0,98.19,shorter than 300 m,356596.7,2031825.8,False
+component_dropped,2020,raster,544.56,0.0,544.56,does not touch the open-coast zone (pond / inland water / open-sea speckle),353559.6,2033402.7,False
+component_dropped,2020,raster,153.55,0.0,153.55,shorter than 300 m,355274.8,2027307.4,False
+component_dropped,2020,raster,521.75,0.0,521.75,does not touch the open-coast zone (pond / inland water / open-sea speckle),357893.7,2031412.4,False
+component_dropped,2020,raster,1514.68,0.0,1514.68,does not touch the open-coast zone (pond / inland water / open-sea speckle),351462.9,2031299.9,False
+component_dropped,2020,raster,28.48,0.0,28.48,shorter than 300 m,362267.2,2028867.7,False
+component_dropped,2020,raster,227.56,0.0,227.56,shorter than 300 m,357329.4,2030608.2,False
+component_dropped,2020,raster,99.54,0.0,99.54,shorter than 300 m,356334.1,2031993.4,False
+component_dropped,2020,raster,343.89,0.0,343.89,does not touch the open-coast zone (pond / inland water / open-sea speckle),359140.8,2030520.2,False
+component_dropped,2020,raster,183.35,0.0,183.35,shorter than 300 m,360318.4,2033280.9,False
+component_dropped,2020,raster,674.01,0.0,674.01,does not touch the open-coast zone (pond / inland water / open-sea speckle),359777.8,2032804.8,False
+component_dropped,2020,raster,82.47,0.0,82.47,shorter than 300 m,359948.0,2033059.9,False
+component_dropped,2020,raster,71.06,0.0,71.06,shorter than 300 m,357648.6,2031285.0,False
+component_dropped,2020,raster,29.82,0.0,29.82,shorter than 300 m,355610.3,2031794.7,False
+component_dropped,2020,raster,2274.44,0.0,2274.44,does not touch the open-coast zone (pond / inland water / open-sea speckle),356669.6,2028384.9,False
+component_dropped,2020,raster,453.72,0.0,453.72,does not touch the open-coast zone (pond / inland water / open-sea speckle),360395.7,2033758.7,False
+component_dropped,2020,raster,99.54,0.0,99.54,shorter than 300 m,353532.0,2030502.8,False
+component_dropped,2020,raster,526.17,0.0,526.17,does not touch the open-coast zone (pond / inland water / open-sea speckle),358141.0,2031145.4,False
+component_dropped,2020,raster,59.65,0.0,59.65,shorter than 300 m,359605.3,2032913.3,False
+component_dropped,2020,raster,210.47,0.0,210.47,shorter than 300 m,360519.2,2033412.9,False
+component_dropped,2020,raster,155.15,0.0,155.15,shorter than 300 m,357611.2,2030562.4,False
+component_dropped,2020,raster,291.24,0.0,291.24,shorter than 300 m,355370.0,2032214.0,False
+component_dropped,2020,raster,28.48,0.0,28.48,shorter than 300 m,358369.9,2029492.5,False
+component_dropped,2020,raster,85.43,0.0,85.43,shorter than 300 m,357246.4,2031618.4,False
+component_dropped,2020,raster,170.6,0.0,170.6,shorter than 300 m,359980.1,2029940.0,False
+component_dropped,2020,raster,139.42,0.0,139.42,shorter than 300 m,359983.1,2033250.8,False
+component_dropped,2020,raster,59.65,0.0,59.65,shorter than 300 m,354051.1,2032716.2,False
+component_dropped,2020,raster,29.82,0.0,29.82,shorter than 300 m,355472.2,2032362.4,False
+component_dropped,2020,raster,155.14,0.0,155.14,shorter than 300 m,357954.6,2031736.4,False
+component_dropped,2020,raster,119.3,0.0,119.3,shorter than 300 m,356350.3,2031744.4,False
+component_dropped,2020,raster,29.82,0.0,29.82,shorter than 300 m,358170.2,2031387.9,False
+component_dropped,2020,raster,99.54,0.0,99.54,shorter than 300 m,355907.4,2031021.7,False
+component_dropped,2020,raster,282.88,0.0,282.88,shorter than 300 m,360670.5,2033480.2,False
+component_dropped,2020,raster,160.53,0.0,160.53,shorter than 300 m,359792.2,2033165.5,False
+component_dropped,2020,raster,41.23,0.0,41.23,shorter than 300 m,359678.1,2033136.5,False
+component_dropped,2020,raster,160.53,0.0,160.53,shorter than 300 m,356110.0,2031969.9,False
+component_dropped,2020,raster,271.48,0.0,271.48,shorter than 300 m,358377.3,2031409.0,False
+component_dropped,2020,raster,29.82,0.0,29.82,shorter than 300 m,357371.4,2031185.0,False
+component_dropped,2020,raster,29.82,0.0,29.82,shorter than 300 m,360095.3,2033729.9,False
+component_dropped,2020,raster,258.73,0.0,258.73,shorter than 300 m,356927.7,2030731.9,False
+component_dropped,2020,raster,1224.2,0.0,1224.2,does not touch the open-coast zone (pond / inland water / open-sea speckle),360197.2,2033504.5,False
+component_dropped,2020,raster,298.63,0.0,298.63,shorter than 300 m,364314.8,2028270.0,False
+component_dropped,2020,raster,28.47,0.0,28.47,shorter than 300 m,353360.0,2033586.4,False
+component_dropped,2020,raster,199.07,0.0,199.07,shorter than 300 m,357354.1,2031843.5,False
+component_dropped,2020,raster,240.31,0.0,240.31,shorter than 300 m,352742.8,2032364.1,False
+component_dropped,2020,raster,98.19,0.0,98.19,shorter than 300 m,359462.0,2030343.2,False
+component_dropped,2020,raster,298.63,0.0,298.63,shorter than 300 m,355884.0,2029328.4,False
+component_dropped,2020,raster,171.95,0.0,171.95,shorter than 300 m,351721.0,2031591.7,False
+component_dropped,2020,raster,190.36,0.0,190.36,shorter than 300 m,354538.0,2032678.2,False
+component_dropped,2020,raster,228.9,0.0,228.9,shorter than 300 m,360129.0,2030217.6,False
+component_dropped,2020,raster,29.82,0.0,29.82,shorter than 300 m,355753.6,2031912.9,False
+component_dropped,2020,raster,29.82,0.0,29.82,shorter than 300 m,357570.7,2031183.5,False
+component_dropped,2020,raster,110.95,0.0,110.95,shorter than 300 m,357038.2,2030866.7,False
+component_dropped,2020,raster,189.01,0.0,189.01,shorter than 300 m,354748.1,2033247.8,False
+component_dropped,2020,raster,343.89,0.0,343.89,does not touch the open-coast zone (pond / inland water / open-sea speckle),360292.2,2030156.5,False
+component_dropped,2020,raster,71.06,0.0,71.06,shorter than 300 m,356202.0,2032046.2,False
+component_dropped,2020,raster,167.89,0.0,167.89,shorter than 300 m,354744.1,2032964.7,False
+component_dropped,2020,raster,142.39,0.0,142.39,shorter than 300 m,359599.9,2030229.1,False
+component_dropped,2020,raster,29.82,0.0,29.82,shorter than 300 m,357600.9,2031421.9,False
+component_dropped,2020,raster,29.82,0.0,29.82,shorter than 300 m,356186.7,2028897.3,False
+component_dropped,2020,raster,325.76,0.0,325.76,does not touch the open-coast zone (pond / inland water / open-sea speckle),360429.1,2029698.4,False
+component_dropped,2020,raster,459.14,0.0,459.14,does not touch the open-coast zone (pond / inland water / open-sea speckle),353854.2,2032625.5,False
+component_dropped,2020,raster,155.15,0.0,155.15,shorter than 300 m,352679.8,2030588.6,False
+component_dropped,2020,raster,271.5,0.0,271.5,shorter than 300 m,357288.5,2027322.8,False
+component_dropped,2020,raster,89.47,0.0,89.47,shorter than 300 m,352882.1,2032531.2,False
+component_dropped,2020,raster,28.48,0.0,28.48,shorter than 300 m,356561.5,2031414.7,False
+component_dropped,2020,raster,29.82,0.0,29.82,shorter than 300 m,360237.3,2029762.2,False
+component_dropped,2020,raster,130.71,0.0,130.71,shorter than 300 m,358028.1,2030811.2,False
+component_dropped,2020,raster,71.06,0.0,71.06,shorter than 300 m,356013.6,2031301.9,False
+component_dropped,2020,raster,187.66,0.0,187.66,shorter than 300 m,355190.4,2031684.5,False
+component_dropped,2020,raster,41.24,0.0,41.24,shorter than 300 m,355114.7,2032156.3,False
+component_dropped,2020,raster,29.82,0.0,29.82,shorter than 300 m,357086.5,2027339.7,False
+component_dropped,2020,raster,28.48,0.0,28.48,shorter than 300 m,358407.8,2030774.7,False
+component_dropped,2020,raster,28.48,0.0,28.48,shorter than 300 m,356957.5,2027236.2,False
+component_dropped,2020,raster,99.53,0.0,99.53,shorter than 300 m,353503.5,2033217.1,False
+component_dropped,2020,raster,41.24,0.0,41.24,shorter than 300 m,354406.4,2032638.9,False
+component_dropped,2020,raster,227.55,0.0,227.55,shorter than 300 m,359218.2,2030850.8,False
+component_dropped,2020,raster,56.95,0.0,56.95,shorter than 300 m,355244.5,2032379.0,False
+component_dropped,2020,raster,28.48,0.0,28.48,shorter than 300 m,355825.3,2031986.9,False
+component_dropped,2020,raster,1360.44,0.0,1360.44,does not touch the open-coast zone (pond / inland water / open-sea speckle),350211.8,2030595.9,False
+component_dropped,2020,raster,820.47,0.0,820.47,does not touch the open-coast zone (pond / inland water / open-sea speckle),354742.6,2032041.2,False
+component_dropped,2020,raster,449.46,0.0,449.46,does not touch the open-coast zone (pond / inland water / open-sea speckle),358789.0,2030169.7,False
+component_dropped,2020,raster,29.82,0.0,29.82,shorter than 300 m,356379.8,2031878.4,False
+component_dropped,2020,raster,59.65,0.0,59.65,shorter than 300 m,355361.3,2032765.9,False
+component_dropped,2020,raster,140.78,0.0,140.78,shorter than 300 m,359718.5,2030103.1,False
+component_dropped,2020,raster,417.91,0.0,417.91,does not touch the open-coast zone (pond / inland water / open-sea speckle),358620.9,2031191.7,False
+component_dropped,2020,raster,140.77,0.0,140.77,shorter than 300 m,356437.0,2031561.3,False
+component_dropped,2020,raster,312.98,0.0,312.98,does not touch the open-coast zone (pond / inland water / open-sea speckle),355689.9,2031548.7,False
+component_dropped,2020,raster,257.38,0.0,257.38,shorter than 300 m,359666.6,2029892.4,False
+component_dropped,2020,raster,41.24,0.0,41.24,shorter than 300 m,356563.1,2031638.4,False
+component_dropped,2020,raster,56.95,0.0,56.95,shorter than 300 m,360591.0,2031414.9,False
+component_dropped,2020,raster,196.38,0.0,196.38,shorter than 300 m,353980.3,2031389.4,False
+component_dropped,2020,raster,56.96,0.0,56.96,shorter than 300 m,357397.5,2030871.7,False
+component_dropped,2020,raster,1050.12,0.0,1050.12,does not touch the open-coast zone (pond / inland water / open-sea speckle),350770.8,2030966.7,False
+component_dropped,2020,raster,98.19,0.0,98.19,shorter than 300 m,355225.9,2032283.4,False
+component_dropped,2020,raster,827.68,0.0,827.68,does not touch the open-coast zone (pond / inland water / open-sea speckle),359808.0,2033561.4,False
+component_dropped,2020,raster,41.23,0.0,41.23,shorter than 300 m,359624.9,2033643.9,False
+component_dropped,2020,raster,29.82,0.0,29.82,shorter than 300 m,353843.9,2031688.7,False
+component_dropped,2020,raster,142.12,0.0,142.12,shorter than 300 m,354908.0,2033067.6,False
+component_dropped,2020,raster,1077.49,0.0,1077.49,does not touch the open-coast zone (pond / inland water / open-sea speckle),358288.1,2030644.2,False
+component_dropped,2020,raster,510.43,0.0,510.43,does not touch the open-coast zone (pond / inland water / open-sea speckle),360116.5,2032699.2,False
+component_dropped,2020,raster,112.3,0.0,112.3,shorter than 300 m,356458.2,2031940.5,False
+component_dropped,2020,raster,227.55,0.0,227.55,shorter than 300 m,353992.8,2031545.2,False
+component_dropped,2020,raster,41.24,0.0,41.24,shorter than 300 m,356788.7,2031338.5,False
+component_dropped,2020,raster,110.95,0.0,110.95,shorter than 300 m,355506.2,2031202.8,False
+component_dropped,2020,raster,263.13,0.0,263.13,shorter than 300 m,354665.6,2032800.1,False
+component_dropped,2020,raster,41.24,0.0,41.24,shorter than 300 m,356987.2,2031217.7,False
+component_dropped,2020,raster,169.24,0.0,169.24,shorter than 300 m,353837.5,2033269.8,False
+component_dropped,2020,raster,69.71,0.0,69.71,shorter than 300 m,358287.6,2031500.2,False
+component_dropped,2020,raster,69.71,0.0,69.71,shorter than 300 m,358308.3,2031154.3,False
+component_dropped,2020,raster,295.93,0.0,295.93,shorter than 300 m,360126.8,2029819.6,False
+component_dropped,2020,raster,171.94,0.0,171.94,shorter than 300 m,358487.1,2032550.7,False
+component_dropped,2020,raster,59.65,0.0,59.65,shorter than 300 m,356690.3,2031503.2,False
+component_dropped,2020,raster,28.48,0.0,28.48,shorter than 300 m,354970.4,2031903.9,False
+component_dropped,2020,raster,71.06,0.0,71.06,shorter than 300 m,356740.3,2031684.2,False
+component_dropped,2020,raster,41.24,0.0,41.24,shorter than 300 m,357154.7,2030769.1,False
+component_dropped,2020,raster,538.9,0.0,538.9,does not touch the open-coast zone (pond / inland water / open-sea speckle),360062.2,2032907.3,False
+component_dropped,2020,raster,69.71,0.0,69.71,shorter than 300 m,358340.6,2030963.0,False
+component_dropped,2020,raster,149.12,0.0,149.12,shorter than 300 m,356346.2,2031192.7,False
+component_dropped,2020,raster,580.14,0.0,580.14,does not touch the open-coast zone (pond / inland water / open-sea speckle),353863.8,2033540.8,False
+component_dropped,2020,raster,41.24,0.0,41.24,shorter than 300 m,354462.2,2032489.3,False
+component_dropped,2020,raster,59.65,0.0,59.65,shorter than 300 m,353432.1,2033705.1,False
+component_dropped,2020,raster,41.23,0.0,41.23,shorter than 300 m,359617.7,2032659.7,False
+component_dropped,2020,raster,28.48,0.0,28.48,shorter than 300 m,360509.4,2029983.9,False
+component_dropped,2020,raster,128.03,0.0,128.03,shorter than 300 m,357170.0,2027279.7,False
+component_dropped,2020,raster,100.89,0.0,100.89,shorter than 300 m,357293.7,2031450.6,False
+component_dropped,2020,raster,41.24,0.0,41.24,shorter than 300 m,355652.4,2031704.9,False
+component_dropped,2020,raster,29.82,0.0,29.82,shorter than 300 m,353842.5,2031509.8,False
+component_dropped,2020,raster,71.06,0.0,71.06,shorter than 300 m,353589.3,2032990.5,False
+component_dropped,2020,raster,128.03,0.0,128.03,shorter than 300 m,356244.2,2028777.9,False
+component_dropped,2020,raster,112.3,0.0,112.3,shorter than 300 m,354433.2,2032907.1,False
+component_dropped,2020,raster,319.72,0.0,319.72,does not touch the open-coast zone (pond / inland water / open-sea speckle),354832.1,2032377.7,False
+component_dropped,2020,raster,99.54,0.0,99.54,shorter than 300 m,358413.9,2031083.2,False
+component_dropped,2020,raster,182.01,0.0,182.01,shorter than 300 m,359621.1,2030406.7,False
+component_dropped,2020,raster,41.24,0.0,41.24,shorter than 300 m,355974.8,2029137.5,False
+component_dropped,2020,raster,89.47,0.0,89.47,shorter than 300 m,355150.4,2031231.5,False
+component_dropped,2020,raster,89.47,0.0,89.47,shorter than 300 m,354287.1,2033803.0,False
+component_dropped,2020,raster,113.91,0.0,113.91,shorter than 300 m,357167.3,2030545.3,False
+component_dropped,2020,raster,153.53,0.0,153.53,shorter than 300 m,354070.0,2033699.2,False
+component_dropped,2020,raster,1961.99,0.0,1961.99,does not touch the open-coast zone (pond / inland water / open-sea speckle),356539.0,2027949.2,False
+year_summary,2020,14 chains,222990.0,30074.15,192915.85,"14 traced chains, 30.1 km",,,False
+speckle_rings_removed,2025,raster,897.0,0.0,897.0,897 closed rings enclosing < 120 px (~10 ha) removed (holes/islets of the water mask),,,False
+skeletonize,2025,raster,12232.0,5138.0,7094.0,edge band 12232 px -> centre line 5138 px,,,False
+spurs_pruned,2025,raster,148.0,0.0,148.0,148 branches shorter than 4 px (~120 m) that end freely were removed,,,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,360924.0,2030204.6,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,358344.3,2033742.8,False
+component_dropped,2025,raster,85.43,0.0,85.43,shorter than 300 m,356896.7,2030547.3,False
+component_dropped,2025,raster,152.18,0.0,152.18,shorter than 300 m,350521.1,2033316.6,False
+component_dropped,2025,raster,56.95,0.0,56.95,shorter than 300 m,361491.2,2033824.2,False
+component_dropped,2025,raster,230.25,0.0,230.25,shorter than 300 m,364406.8,2030276.1,False
+component_dropped,2025,raster,56.95,0.0,56.95,shorter than 300 m,359280.0,2031275.3,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,358470.0,2031490.1,False
+component_dropped,2025,raster,763.74,0.0,763.74,does not touch the open-coast zone (pond / inland water / open-sea speckle),363127.2,2032480.4,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,364176.2,2033014.6,False
+component_dropped,2025,raster,1049.35,0.0,1049.35,does not touch the open-coast zone (pond / inland water / open-sea speckle),359814.9,2031862.2,False
+component_dropped,2025,raster,230.24,0.0,230.24,shorter than 300 m,362430.0,2032602.6,False
+component_dropped,2025,raster,59.65,0.0,59.65,shorter than 300 m,362055.3,2029107.8,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,362325.9,2033087.5,False
+component_dropped,2025,raster,98.19,0.0,98.19,shorter than 300 m,358765.1,2032388.9,False
+component_dropped,2025,raster,71.06,0.0,71.06,shorter than 300 m,358836.2,2031753.4,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,361245.8,2029411.9,False
+component_dropped,2025,raster,1375.06,0.0,1375.06,does not touch the open-coast zone (pond / inland water / open-sea speckle),360720.6,2032357.0,False
+component_dropped,2025,raster,209.14,0.0,209.14,shorter than 300 m,361948.7,2030250.7,False
+component_dropped,2025,raster,71.06,0.0,71.06,shorter than 300 m,363076.8,2033725.7,False
+component_dropped,2025,raster,715.17,0.0,715.17,does not touch the open-coast zone (pond / inland water / open-sea speckle),364677.0,2030738.6,False
+component_dropped,2025,raster,250.36,0.0,250.36,shorter than 300 m,363441.3,2032369.2,False
+component_dropped,2025,raster,99.54,0.0,99.54,shorter than 300 m,357774.0,2030321.8,False
+component_dropped,2025,raster,3672.52,0.0,3672.52,does not touch the open-coast zone (pond / inland water / open-sea speckle),358846.0,2032951.8,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,357410.2,2030662.8,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,361789.0,2031689.6,False
+component_dropped,2025,raster,2295.72,0.0,2295.72,does not touch the open-coast zone (pond / inland water / open-sea speckle),358912.8,2033724.6,False
+component_dropped,2025,raster,126.66,0.0,126.66,shorter than 300 m,358017.2,2033218.4,False
+component_dropped,2025,raster,187.66,0.0,187.66,shorter than 300 m,361978.3,2031413.9,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,364741.6,2028387.9,False
+component_dropped,2025,raster,200.43,0.0,200.43,shorter than 300 m,356775.2,2030790.3,False
+component_dropped,2025,raster,553.27,0.0,553.27,does not touch the open-coast zone (pond / inland water / open-sea speckle),350425.0,2033615.2,False
+component_dropped,2025,raster,353.94,0.0,353.94,does not touch the open-coast zone (pond / inland water / open-sea speckle),363746.3,2031889.9,False
+component_dropped,2025,raster,157.84,0.0,157.84,shorter than 300 m,357735.0,2030865.8,False
+component_dropped,2025,raster,69.72,0.0,69.72,shorter than 300 m,360265.7,2029398.0,False
+component_dropped,2025,raster,130.71,0.0,130.71,shorter than 300 m,363930.1,2031812.4,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,358092.3,2030478.8,False
+component_dropped,2025,raster,71.06,0.0,71.06,shorter than 300 m,363278.9,2031810.7,False
+component_dropped,2025,raster,69.72,0.0,69.72,shorter than 300 m,356771.6,2030599.1,False
+component_dropped,2025,raster,100.88,0.0,100.88,shorter than 300 m,360570.8,2030594.8,False
+component_dropped,2025,raster,142.39,0.0,142.39,shorter than 300 m,364386.4,2030522.8,False
+component_dropped,2025,raster,112.3,0.0,112.3,shorter than 300 m,362468.5,2030077.2,False
+component_dropped,2025,raster,1080.74,0.0,1080.74,does not touch the open-coast zone (pond / inland water / open-sea speckle),357545.4,2033754.2,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,363752.5,2029483.4,False
+component_dropped,2025,raster,223.25,0.0,223.25,shorter than 300 m,361701.4,2030496.1,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,361374.0,2029425.9,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,358210.4,2031044.6,False
+component_dropped,2025,raster,170.6,0.0,170.6,shorter than 300 m,363113.4,2029416.4,False
+component_dropped,2025,raster,2480.75,0.0,2480.75,does not touch the open-coast zone (pond / inland water / open-sea speckle),361980.2,2029529.1,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,361984.7,2031181.1,False
+component_dropped,2025,raster,112.3,0.0,112.3,shorter than 300 m,363078.6,2029887.8,False
+component_dropped,2025,raster,157.84,0.0,157.84,shorter than 300 m,360430.3,2029474.0,False
+component_dropped,2025,raster,28.47,0.0,28.47,shorter than 300 m,363573.1,2032288.2,False
+component_dropped,2025,raster,194.76,0.0,194.76,shorter than 300 m,363445.5,2032597.7,False
+component_dropped,2025,raster,240.31,0.0,240.31,shorter than 300 m,361466.2,2030736.1,False
+component_dropped,2025,raster,211.84,0.0,211.84,shorter than 300 m,361552.7,2030365.7,False
+component_dropped,2025,raster,153.53,0.0,153.53,shorter than 300 m,356995.4,2030931.0,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,361940.6,2029004.2,False
+component_dropped,2025,raster,128.01,0.0,128.01,shorter than 300 m,350581.6,2033503.7,False
+component_dropped,2025,raster,1282.82,0.0,1282.82,does not touch the open-coast zone (pond / inland water / open-sea speckle),360135.2,2031429.0,False
+component_dropped,2025,raster,658.21,0.0,658.21,does not touch the open-coast zone (pond / inland water / open-sea speckle),361731.9,2031861.8,False
+component_dropped,2025,raster,449.09,0.0,449.09,does not touch the open-coast zone (pond / inland water / open-sea speckle),364016.8,2028588.3,False
+component_dropped,2025,raster,209.15,0.0,209.15,shorter than 300 m,360010.1,2029495.2,False
+component_dropped,2025,raster,128.02,0.0,128.02,shorter than 300 m,361411.7,2030499.6,False
+component_dropped,2025,raster,153.52,0.0,153.52,shorter than 300 m,364749.4,2032847.7,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,359268.4,2031633.3,False
+component_dropped,2025,raster,209.16,0.0,209.16,shorter than 300 m,361683.9,2028829.2,False
+component_dropped,2025,raster,939.73,0.0,939.73,does not touch the open-coast zone (pond / inland water / open-sea speckle),363954.3,2032448.9,False
+component_dropped,2025,raster,123.71,0.0,123.71,shorter than 300 m,360374.7,2031043.6,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,359222.3,2033110.0,False
+component_dropped,2025,raster,98.2,0.0,98.2,shorter than 300 m,357231.7,2029635.1,False
+component_dropped,2025,raster,98.19,0.0,98.19,shorter than 300 m,361628.9,2030685.3,False
+component_dropped,2025,raster,1672.3,0.0,1672.3,does not touch the open-coast zone (pond / inland water / open-sea speckle),364502.2,2032282.7,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,357855.1,2033060.4,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,359818.2,2030868.8,False
+component_dropped,2025,raster,422.2,0.0,422.2,does not touch the open-coast zone (pond / inland water / open-sea speckle),362615.1,2032070.5,False
+component_dropped,2025,raster,1011.02,0.0,1011.02,does not touch the open-coast zone (pond / inland water / open-sea speckle),363926.1,2033074.0,False
+component_dropped,2025,raster,139.42,0.0,139.42,shorter than 300 m,361854.2,2032473.4,False
+component_dropped,2025,raster,69.71,0.0,69.71,shorter than 300 m,363848.2,2032563.5,False
+component_dropped,2025,raster,224.59,0.0,224.59,shorter than 300 m,361247.6,2032157.3,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,363172.1,2031963.0,False
+component_dropped,2025,raster,691.09,0.0,691.09,does not touch the open-coast zone (pond / inland water / open-sea speckle),358139.9,2032425.9,False
+component_dropped,2025,raster,263.13,0.0,263.13,shorter than 300 m,364357.6,2031066.9,False
+component_dropped,2025,raster,197.73,0.0,197.73,shorter than 300 m,362754.2,2030975.6,False
+component_dropped,2025,raster,130.71,0.0,130.71,shorter than 300 m,360301.8,2032310.4,False
+component_dropped,2025,raster,100.88,0.0,100.88,shorter than 300 m,359740.5,2031141.1,False
+component_dropped,2025,raster,654.16,0.0,654.16,does not touch the open-coast zone (pond / inland water / open-sea speckle),357971.6,2032676.2,False
+component_dropped,2025,raster,69.71,0.0,69.71,shorter than 300 m,362060.3,2033411.4,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,362524.5,2029015.0,False
+component_dropped,2025,raster,352.6,0.0,352.6,does not touch the open-coast zone (pond / inland water / open-sea speckle),360919.5,2031279.3,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,360545.7,2033010.9,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,360859.5,2031129.6,False
+component_dropped,2025,raster,56.95,0.0,56.95,shorter than 300 m,360295.4,2033832.9,False
+component_dropped,2025,raster,182.02,0.0,182.02,shorter than 300 m,362241.2,2028953.4,False
+component_dropped,2025,raster,4317.07,0.0,4317.07,does not touch the open-coast zone (pond / inland water / open-sea speckle),357745.1,2031569.8,False
+component_dropped,2025,raster,56.95,0.0,56.95,shorter than 300 m,358282.7,2031193.2,False
+component_dropped,2025,raster,571.43,0.0,571.43,does not touch the open-coast zone (pond / inland water / open-sea speckle),363404.4,2031363.8,False
+component_dropped,2025,raster,412.25,0.0,412.25,does not touch the open-coast zone (pond / inland water / open-sea speckle),361569.3,2031479.2,False
+component_dropped,2025,raster,294.3,0.0,294.3,shorter than 300 m,363426.4,2031850.2,False
+component_dropped,2025,raster,71.06,0.0,71.06,shorter than 300 m,361415.4,2030064.4,False
+component_dropped,2025,raster,2960.69,0.0,2960.69,does not touch the open-coast zone (pond / inland water / open-sea speckle),354753.8,2028462.2,False
+component_dropped,2025,raster,392.47,0.0,392.47,does not touch the open-coast zone (pond / inland water / open-sea speckle),357219.1,2033554.7,False
+component_dropped,2025,raster,220.18,0.0,220.18,shorter than 300 m,363844.9,2029375.3,False
+component_dropped,2025,raster,3037.12,0.0,3037.12,does not touch the open-coast zone (pond / inland water / open-sea speckle),364179.2,2029455.9,False
+component_dropped,2025,raster,71.06,0.0,71.06,shorter than 300 m,360217.5,2033741.6,False
+component_dropped,2025,raster,98.18,0.0,98.18,shorter than 300 m,359676.4,2032897.9,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,360243.0,2032506.0,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,359875.0,2032807.0,False
+component_dropped,2025,raster,129.36,0.0,129.36,shorter than 300 m,364351.5,2029655.7,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,360207.9,2029643.1,False
+component_dropped,2025,raster,1281.08,0.0,1281.08,does not touch the open-coast zone (pond / inland water / open-sea speckle),359929.2,2032532.1,False
+component_dropped,2025,raster,69.71,0.0,69.71,shorter than 300 m,363266.9,2031643.1,False
+component_dropped,2025,raster,113.9,0.0,113.9,shorter than 300 m,362079.9,2032537.5,False
+component_dropped,2025,raster,461.84,0.0,461.84,does not touch the open-coast zone (pond / inland water / open-sea speckle),364727.5,2029947.8,False
+component_dropped,2025,raster,5491.49,0.0,5491.49,does not touch the open-coast zone (pond / inland water / open-sea speckle),363429.5,2030806.2,False
+component_dropped,2025,raster,153.53,0.0,153.53,shorter than 300 m,358724.4,2031606.4,False
+component_dropped,2025,raster,221.88,0.0,221.88,shorter than 300 m,357803.9,2033554.6,False
+component_dropped,2025,raster,110.95,0.0,110.95,shorter than 300 m,364187.7,2030613.7,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,361848.8,2032076.9,False
+component_dropped,2025,raster,1278.21,0.0,1278.21,does not touch the open-coast zone (pond / inland water / open-sea speckle),358149.4,2033477.9,False
+component_dropped,2025,raster,1075.06,0.0,1075.06,does not touch the open-coast zone (pond / inland water / open-sea speckle),362731.6,2030313.9,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,358549.0,2032548.3,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,357544.6,2033420.6,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,363155.4,2029621.9,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,361163.1,2029800.2,False
+component_dropped,2025,raster,100.88,0.0,100.88,shorter than 300 m,361042.4,2031631.9,False
+component_dropped,2025,raster,112.3,0.0,112.3,shorter than 300 m,355674.2,2028931.0,False
+component_dropped,2025,raster,311.37,0.0,311.37,does not touch the open-coast zone (pond / inland water / open-sea speckle),359083.5,2031796.2,False
+component_dropped,2025,raster,845.93,0.0,845.93,does not touch the open-coast zone (pond / inland water / open-sea speckle),363683.9,2033641.2,False
+component_dropped,2025,raster,160.54,0.0,160.54,shorter than 300 m,356997.4,2027344.6,False
+component_dropped,2025,raster,130.71,0.0,130.71,shorter than 300 m,357449.1,2033380.5,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,360163.5,2029404.8,False
+component_dropped,2025,raster,283.13,0.0,283.13,shorter than 300 m,356707.5,2033814.6,False
+component_dropped,2025,raster,28.47,0.0,28.47,shorter than 300 m,364719.0,2033264.3,False
+component_dropped,2025,raster,324.37,0.0,324.37,does not touch the open-coast zone (pond / inland water / open-sea speckle),357992.2,2032977.5,False
+component_dropped,2025,raster,1407.65,0.0,1407.65,does not touch the open-coast zone (pond / inland water / open-sea speckle),362252.4,2030112.1,False
+component_dropped,2025,raster,540.5,0.0,540.5,does not touch the open-coast zone (pond / inland water / open-sea speckle),359494.7,2032987.3,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,352434.8,2029910.0,False
+component_dropped,2025,raster,71.06,0.0,71.06,shorter than 300 m,363047.7,2031335.2,False
+component_dropped,2025,raster,514.76,0.0,514.76,does not touch the open-coast zone (pond / inland water / open-sea speckle),363495.2,2029745.8,False
+component_dropped,2025,raster,525.88,0.0,525.88,does not touch the open-coast zone (pond / inland water / open-sea speckle),364333.3,2032888.9,False
+component_dropped,2025,raster,56.95,0.0,56.95,shorter than 300 m,358257.8,2031670.6,False
+component_dropped,2025,raster,69.71,0.0,69.71,shorter than 300 m,363753.2,2031222.1,False
+component_dropped,2025,raster,174.9,0.0,174.9,shorter than 300 m,357734.8,2031293.6,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,359624.4,2033584.2,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,358674.7,2032219.3,False
+component_dropped,2025,raster,446.38,0.0,446.38,does not touch the open-coast zone (pond / inland water / open-sea speckle),362152.2,2031509.1,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,361032.7,2029488.0,False
+component_dropped,2025,raster,372.61,0.0,372.61,does not touch the open-coast zone (pond / inland water / open-sea speckle),362836.2,2032320.3,False
+component_dropped,2025,raster,224.6,0.0,224.6,shorter than 300 m,364431.6,2028643.5,False
+component_dropped,2025,raster,85.42,0.0,85.42,shorter than 300 m,363861.4,2032793.2,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,361755.4,2028990.7,False
+component_dropped,2025,raster,157.83,0.0,157.83,shorter than 300 m,364764.6,2033081.7,False
+component_dropped,2025,raster,59.65,0.0,59.65,shorter than 300 m,360101.9,2030732.5,False
+component_dropped,2025,raster,130.71,0.0,130.71,shorter than 300 m,358601.1,2031276.4,False
+component_dropped,2025,raster,234.67,0.0,234.67,shorter than 300 m,360972.8,2029188.4,False
+component_dropped,2025,raster,98.19,0.0,98.19,shorter than 300 m,358274.7,2031527.6,False
+component_dropped,2025,raster,157.83,0.0,157.83,shorter than 300 m,362682.5,2032589.4,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,362989.7,2032337.1,False
+component_dropped,2025,raster,100.88,0.0,100.88,shorter than 300 m,363799.7,2033312.2,False
+component_dropped,2025,raster,238.97,0.0,238.97,shorter than 300 m,357572.9,2030895.9,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,359500.8,2030304.4,False
+component_dropped,2025,raster,112.29,0.0,112.29,shorter than 300 m,360080.8,2032772.6,False
+component_dropped,2025,raster,171.95,0.0,171.95,shorter than 300 m,351721.0,2031591.7,False
+component_dropped,2025,raster,69.72,0.0,69.72,shorter than 300 m,363912.1,2029533.1,False
+component_dropped,2025,raster,98.2,0.0,98.2,shorter than 300 m,361130.1,2029687.4,False
+component_dropped,2025,raster,1090.54,0.0,1090.54,does not touch the open-coast zone (pond / inland water / open-sea speckle),362710.4,2033042.5,False
+component_dropped,2025,raster,258.72,0.0,258.72,shorter than 300 m,360792.5,2031955.1,False
+component_dropped,2025,raster,826.11,0.0,826.11,does not touch the open-coast zone (pond / inland water / open-sea speckle),359414.1,2031944.0,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,358773.9,2030220.2,False
+component_dropped,2025,raster,59.65,0.0,59.65,shorter than 300 m,364132.1,2028794.8,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,364017.9,2028750.9,False
+component_dropped,2025,raster,149.12,0.0,149.12,shorter than 300 m,363674.5,2032541.0,False
+component_dropped,2025,raster,99.54,0.0,99.54,shorter than 300 m,360428.6,2031157.9,False
+component_dropped,2025,raster,59.65,0.0,59.65,shorter than 300 m,361221.2,2031917.3,False
+component_dropped,2025,raster,1117.47,0.0,1117.47,does not touch the open-coast zone (pond / inland water / open-sea speckle),362477.2,2030843.6,False
+component_dropped,2025,raster,449.41,0.0,449.41,does not touch the open-coast zone (pond / inland water / open-sea speckle),363167.3,2033489.8,False
+component_dropped,2025,raster,655.54,0.0,655.54,does not touch the open-coast zone (pond / inland water / open-sea speckle),363841.7,2029804.2,False
+component_dropped,2025,raster,1236.9,0.0,1236.9,does not touch the open-coast zone (pond / inland water / open-sea speckle),362927.6,2031594.5,False
+component_dropped,2025,raster,98.18,0.0,98.18,shorter than 300 m,363636.5,2032681.7,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,361362.6,2029813.7,False
+component_dropped,2025,raster,71.06,0.0,71.06,shorter than 300 m,360175.6,2031897.5,False
+component_dropped,2025,raster,591.59,0.0,591.59,does not touch the open-coast zone (pond / inland water / open-sea speckle),361551.7,2029856.8,False
+component_dropped,2025,raster,2499.5,0.0,2499.5,does not touch the open-coast zone (pond / inland water / open-sea speckle),351084.8,2031163.9,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,358381.8,2031117.9,False
+component_dropped,2025,raster,328.43,0.0,328.43,does not touch the open-coast zone (pond / inland water / open-sea speckle),359244.1,2032571.5,False
+component_dropped,2025,raster,71.06,0.0,71.06,shorter than 300 m,360598.4,2031293.1,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,363961.6,2028840.7,False
+component_dropped,2025,raster,736.27,0.0,736.27,does not touch the open-coast zone (pond / inland water / open-sea speckle),358503.4,2032095.5,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,364490.5,2033161.5,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,361385.0,2030946.9,False
+component_dropped,2025,raster,126.67,0.0,126.67,shorter than 300 m,352666.5,2030590.8,False
+component_dropped,2025,raster,726.58,0.0,726.58,does not touch the open-coast zone (pond / inland water / open-sea speckle),361269.6,2031391.0,False
+component_dropped,2025,raster,159.19,0.0,159.19,shorter than 300 m,361913.7,2030795.0,False
+component_dropped,2025,raster,69.71,0.0,69.71,shorter than 300 m,350332.0,2033839.5,False
+component_dropped,2025,raster,1019.55,0.0,1019.55,does not touch the open-coast zone (pond / inland water / open-sea speckle),360750.2,2030916.2,False
+component_dropped,2025,raster,332.47,0.0,332.47,does not touch the open-coast zone (pond / inland water / open-sea speckle),361682.5,2032327.0,False
+component_dropped,2025,raster,129.36,0.0,129.36,shorter than 300 m,350368.2,2033373.3,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,358496.5,2033145.2,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,362406.2,2032371.1,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,357753.7,2032822.6,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,360223.3,2029792.1,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,360563.5,2029580.9,False
+component_dropped,2025,raster,129.35,0.0,129.35,shorter than 300 m,363896.6,2033774.7,False
+component_dropped,2025,raster,257.37,0.0,257.37,shorter than 300 m,350149.2,2033829.9,False
+component_dropped,2025,raster,59.65,0.0,59.65,shorter than 300 m,361354.7,2030693.6,False
+component_dropped,2025,raster,142.12,0.0,142.12,shorter than 300 m,351834.8,2031207.2,False
+component_dropped,2025,raster,56.96,0.0,56.96,shorter than 300 m,362862.9,2030533.6,False
+component_dropped,2025,raster,180.65,0.0,180.65,shorter than 300 m,362473.1,2033196.3,False
+component_dropped,2025,raster,98.19,0.0,98.19,shorter than 300 m,359014.2,2031918.5,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,361342.9,2031036.6,False
+component_dropped,2025,raster,159.18,0.0,159.18,shorter than 300 m,361178.9,2032378.9,False
+component_dropped,2025,raster,110.94,0.0,110.94,shorter than 300 m,358339.2,2033060.7,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,356945.9,2027579.3,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,362640.7,2031325.6,False
+component_dropped,2025,raster,422.55,0.0,422.55,does not touch the open-coast zone (pond / inland water / open-sea speckle),358611.9,2033353.1,False
+component_dropped,2025,raster,142.12,0.0,142.12,shorter than 300 m,361360.0,2033405.2,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,360728.8,2032741.1,False
+component_dropped,2025,raster,56.95,0.0,56.95,shorter than 300 m,363010.2,2031218.5,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,356520.3,2029715.0,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,358466.4,2032936.6,False
+component_dropped,2025,raster,85.43,0.0,85.43,shorter than 300 m,359945.8,2030793.3,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,361457.2,2031080.5,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,361825.7,2030854.2,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,361322.5,2030171.9,False
+component_dropped,2025,raster,56.95,0.0,56.95,shorter than 300 m,362190.6,2032089.3,False
+component_dropped,2025,raster,614.51,0.0,614.51,does not touch the open-coast zone (pond / inland water / open-sea speckle),363038.3,2033070.3,False
+component_dropped,2025,raster,871.73,0.0,871.73,does not touch the open-coast zone (pond / inland water / open-sea speckle),362365.9,2032353.2,False
+component_dropped,2025,raster,268.78,0.0,268.78,shorter than 300 m,364681.6,2031747.3,False
+component_dropped,2025,raster,713.55,0.0,713.55,does not touch the open-coast zone (pond / inland water / open-sea speckle),364706.9,2031185.7,False
+component_dropped,2025,raster,352.87,0.0,352.87,does not touch the open-coast zone (pond / inland water / open-sea speckle),357728.4,2031141.6,False
+component_dropped,2025,raster,218.83,0.0,218.83,shorter than 300 m,363612.7,2033018.0,False
+component_dropped,2025,raster,211.83,0.0,211.83,shorter than 300 m,358133.0,2031613.5,False
+component_dropped,2025,raster,85.43,0.0,85.43,shorter than 300 m,360172.0,2030582.8,False
+component_dropped,2025,raster,240.32,0.0,240.32,shorter than 300 m,361574.1,2029227.7,False
+component_dropped,2025,raster,59.65,0.0,59.65,shorter than 300 m,359855.2,2032046.6,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,360169.6,2032208.3,False
+component_dropped,2025,raster,129.36,0.0,129.36,shorter than 300 m,364083.0,2031959.0,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,356918.0,2027669.0,False
+component_dropped,2025,raster,140.78,0.0,140.78,shorter than 300 m,363662.3,2029597.5,False
+component_dropped,2025,raster,123.71,0.0,123.71,shorter than 300 m,361905.8,2030108.0,False
+component_dropped,2025,raster,110.94,0.0,110.94,shorter than 300 m,361272.6,2033128.7,False
+component_dropped,2025,raster,1290.72,0.0,1290.72,does not touch the open-coast zone (pond / inland water / open-sea speckle),350196.0,2030606.8,False
+component_dropped,2025,raster,237.6,0.0,237.6,shorter than 300 m,363319.4,2032862.8,False
+component_dropped,2025,raster,1038.2,0.0,1038.2,does not touch the open-coast zone (pond / inland water / open-sea speckle),360606.6,2031637.2,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,361174.0,2029337.8,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,358827.2,2033590.1,False
+component_dropped,2025,raster,178.95,0.0,178.95,shorter than 300 m,358138.4,2030925.8,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,359377.9,2031021.1,False
+component_dropped,2025,raster,200.42,0.0,200.42,shorter than 300 m,358435.6,2030950.8,False
+component_dropped,2025,raster,851.66,0.0,851.66,does not touch the open-coast zone (pond / inland water / open-sea speckle),360870.3,2029900.1,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,364065.5,2029436.5,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,359682.4,2029825.9,False
+component_dropped,2025,raster,71.06,0.0,71.06,shorter than 300 m,355806.1,2030225.0,False
+component_dropped,2025,raster,82.47,0.0,82.47,shorter than 300 m,358767.0,2031219.4,False
+component_dropped,2025,raster,98.18,0.0,98.18,shorter than 300 m,351844.7,2033263.7,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,359130.0,2032171.2,False
+component_dropped,2025,raster,28.47,0.0,28.47,shorter than 300 m,362982.1,2033276.6,False
+component_dropped,2025,raster,308.67,0.0,308.67,does not touch the open-coast zone (pond / inland water / open-sea speckle),364221.5,2031653.4,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,364434.4,2033281.2,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,359662.0,2030929.5,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,359462.6,2030931.0,False
+component_dropped,2025,raster,631.09,0.0,631.09,does not touch the open-coast zone (pond / inland water / open-sea speckle),363255.4,2030115.2,False
+component_dropped,2025,raster,59.65,0.0,59.65,shorter than 300 m,354305.5,2032475.6,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,361443.4,2033123.6,False
+component_dropped,2025,raster,112.3,0.0,112.3,shorter than 300 m,359446.9,2031763.2,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,359480.1,2031378.2,False
+component_dropped,2025,raster,119.29,0.0,119.29,shorter than 300 m,364770.2,2030430.6,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,360366.7,2029940.2,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,364288.7,2028778.8,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,363269.7,2029665.8,False
+component_dropped,2025,raster,28.47,0.0,28.47,shorter than 300 m,362237.6,2032685.5,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,364088.9,2032746.8,False
+component_dropped,2025,raster,379.7,0.0,379.7,does not touch the open-coast zone (pond / inland water / open-sea speckle),363321.2,2033761.1,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,362239.8,2032998.6,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,357665.6,2030541.6,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,355263.2,2027293.6,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,364649.6,2031505.2,False
+component_dropped,2025,raster,170.6,0.0,170.6,shorter than 300 m,362914.2,2029838.3,False
+component_dropped,2025,raster,341.47,0.0,341.47,does not touch the open-coast zone (pond / inland water / open-sea speckle),361059.9,2030391.0,False
+component_dropped,2025,raster,264.49,0.0,264.49,shorter than 300 m,361484.2,2030152.6,False
+component_dropped,2025,raster,250.36,0.0,250.36,shorter than 300 m,359365.1,2033365.8,False
+component_dropped,2025,raster,167.9,0.0,167.9,shorter than 300 m,351891.0,2031683.7,False
+component_dropped,2025,raster,71.06,0.0,71.06,shorter than 300 m,358240.7,2030475.3,False
+component_dropped,2025,raster,28.47,0.0,28.47,shorter than 300 m,363695.0,2033420.7,False
+component_dropped,2025,raster,126.66,0.0,126.66,shorter than 300 m,361161.6,2031757.1,False
+component_dropped,2025,raster,142.12,0.0,142.12,shorter than 300 m,363713.1,2032794.2,False
+component_dropped,2025,raster,570.05,0.0,570.05,does not touch the open-coast zone (pond / inland water / open-sea speckle),364658.4,2033625.2,False
+component_dropped,2025,raster,183.36,0.0,183.36,shorter than 300 m,361356.7,2029245.2,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,350835.2,2027461.7,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,358361.0,2032147.0,False
+component_dropped,2025,raster,100.88,0.0,100.88,shorter than 300 m,360464.8,2032835.9,False
+component_dropped,2025,raster,98.19,0.0,98.19,shorter than 300 m,363627.5,2031416.6,False
+component_dropped,2025,raster,540.41,0.0,540.41,does not touch the open-coast zone (pond / inland water / open-sea speckle),354116.6,2029833.5,False
+component_dropped,2025,raster,263.04,0.0,263.04,shorter than 300 m,360660.2,2029701.9,False
+component_dropped,2025,raster,71.06,0.0,71.06,shorter than 300 m,360316.9,2031742.6,False
+component_dropped,2025,raster,369.66,0.0,369.66,does not touch the open-coast zone (pond / inland water / open-sea speckle),362398.3,2031716.2,False
+component_dropped,2025,raster,307.06,0.0,307.06,does not touch the open-coast zone (pond / inland water / open-sea speckle),357455.7,2032157.0,False
+component_dropped,2025,raster,211.83,0.0,211.83,shorter than 300 m,361232.9,2031617.3,False
+component_dropped,2025,raster,227.55,0.0,227.55,shorter than 300 m,358316.6,2031321.0,False
+component_dropped,2025,raster,224.83,0.0,224.83,shorter than 300 m,363984.7,2033431.6,False
+component_dropped,2025,raster,98.19,0.0,98.19,shorter than 300 m,364067.7,2030280.2,False
+component_dropped,2025,raster,153.53,0.0,153.53,shorter than 300 m,362446.7,2032889.4,False
+component_dropped,2025,raster,71.06,0.0,71.06,shorter than 300 m,361952.5,2033465.4,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,360480.9,2029969.2,False
+component_dropped,2025,raster,214.78,0.0,214.78,shorter than 300 m,357422.5,2033029.3,False
+component_dropped,2025,raster,301.31,0.0,301.31,does not touch the open-coast zone (pond / inland water / open-sea speckle),360326.2,2030765.7,False
+component_dropped,2025,raster,216.13,0.0,216.13,shorter than 300 m,357246.4,2033203.0,False
+component_dropped,2025,raster,348.56,0.0,348.56,does not touch the open-coast zone (pond / inland water / open-sea speckle),362209.9,2031175.9,False
+component_dropped,2025,raster,340.11,0.0,340.11,does not touch the open-coast zone (pond / inland water / open-sea speckle),361225.9,2030839.7,False
+component_dropped,2025,raster,197.74,0.0,197.74,shorter than 300 m,360432.3,2029649.6,False
+component_dropped,2025,raster,56.96,0.0,56.96,shorter than 300 m,361318.7,2029650.0,False
+component_dropped,2025,raster,790.66,0.0,790.66,does not touch the open-coast zone (pond / inland water / open-sea speckle),362847.1,2030029.8,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,364568.9,2030148.7,False
+component_dropped,2025,raster,169.25,0.0,169.25,shorter than 300 m,363616.4,2031065.0,False
+component_dropped,2025,raster,753.46,0.0,753.46,does not touch the open-coast zone (pond / inland water / open-sea speckle),358678.8,2030479.0,False
+component_dropped,2025,raster,100.88,0.0,100.88,shorter than 300 m,361887.9,2030403.0,False
+component_dropped,2025,raster,112.3,0.0,112.3,shorter than 300 m,360251.4,2030269.1,False
+component_dropped,2025,raster,558.67,0.0,558.67,does not touch the open-coast zone (pond / inland water / open-sea speckle),359746.8,2032248.8,False
+component_dropped,2025,raster,119.3,0.0,119.3,shorter than 300 m,356890.6,2027803.4,False
+component_dropped,2025,raster,100.88,0.0,100.88,shorter than 300 m,363907.8,2030120.2,False
+component_dropped,2025,raster,187.66,0.0,187.66,shorter than 300 m,362213.4,2031885.6,False
+component_dropped,2025,raster,100.89,0.0,100.89,shorter than 300 m,357743.4,2030648.8,False
+component_dropped,2025,raster,196.37,0.0,196.37,shorter than 300 m,359486.2,2032204.7,False
+component_dropped,2025,raster,119.3,0.0,119.3,shorter than 300 m,363628.8,2030110.6,False
+component_dropped,2025,raster,69.71,0.0,69.71,shorter than 300 m,362939.5,2033655.8,False
+component_dropped,2025,raster,69.71,0.0,69.71,shorter than 300 m,361954.7,2030608.6,False
+component_dropped,2025,raster,99.53,0.0,99.53,shorter than 300 m,350006.2,2033891.0,False
+component_dropped,2025,raster,288.8,0.0,288.8,shorter than 300 m,361857.0,2031570.8,False
+component_dropped,2025,raster,59.65,0.0,59.65,shorter than 300 m,364756.8,2028522.0,False
+component_dropped,2025,raster,89.47,0.0,89.47,shorter than 300 m,361088.6,2029338.5,False
+component_dropped,2025,raster,341.43,0.0,341.43,does not touch the open-coast zone (pond / inland water / open-sea speckle),359549.0,2033785.6,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,359501.3,2032317.6,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,355698.1,2030213.3,False
+component_dropped,2025,raster,183.6,0.0,183.6,shorter than 300 m,357703.5,2033336.9,False
+component_dropped,2025,raster,89.47,0.0,89.47,shorter than 300 m,364277.6,2029226.2,False
+component_dropped,2025,raster,126.65,0.0,126.65,shorter than 300 m,356996.9,2033852.3,False
+component_dropped,2025,raster,100.88,0.0,100.88,shorter than 300 m,357819.2,2033183.4,False
+component_dropped,2025,raster,240.32,0.0,240.32,shorter than 300 m,360003.4,2029688.7,False
+component_dropped,2025,raster,100.88,0.0,100.88,shorter than 300 m,364585.2,2033283.5,False
+component_dropped,2025,raster,260.07,0.0,260.07,shorter than 300 m,361790.6,2029241.0,False
+component_dropped,2025,raster,85.43,0.0,85.43,shorter than 300 m,358039.8,2031075.7,False
+component_dropped,2025,raster,183.36,0.0,183.36,shorter than 300 m,358335.9,2030635.5,False
+component_dropped,2025,raster,69.71,0.0,69.71,shorter than 300 m,362024.8,2032427.4,False
+component_dropped,2025,raster,343.89,0.0,343.89,does not touch the open-coast zone (pond / inland water / open-sea speckle),364715.3,2028918.9,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,364288.0,2028689.3,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,359134.7,2032812.4,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,361846.6,2029795.3,False
+component_dropped,2025,raster,183.6,0.0,183.6,shorter than 300 m,362717.1,2033628.5,False
+component_dropped,2025,raster,687.93,0.0,687.93,does not touch the open-coast zone (pond / inland water / open-sea speckle),358354.3,2032605.9,False
+component_dropped,2025,raster,59.65,0.0,59.65,shorter than 300 m,358421.8,2030744.8,False
+component_dropped,2025,raster,69.71,0.0,69.71,shorter than 300 m,359559.4,2030894.4,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,358607.9,2030877.6,False
+component_dropped,2025,raster,302.65,0.0,302.65,does not touch the open-coast zone (pond / inland water / open-sea speckle),360669.4,2030469.2,False
+component_dropped,2025,raster,558.94,0.0,558.94,does not touch the open-coast zone (pond / inland water / open-sea speckle),364164.2,2031285.3,False
+component_dropped,2025,raster,82.47,0.0,82.47,shorter than 300 m,357697.8,2032957.2,False
+component_dropped,2025,raster,100.88,0.0,100.88,shorter than 300 m,358661.0,2031500.2,False
+component_dropped,2025,raster,226.2,0.0,226.2,shorter than 300 m,364438.1,2031790.0,False
+component_dropped,2025,raster,59.65,0.0,59.65,shorter than 300 m,364283.8,2030106.0,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,364766.6,2031936.8,False
+component_dropped,2025,raster,196.37,0.0,196.37,shorter than 300 m,360904.6,2031721.5,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,361377.0,2031811.8,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,363372.5,2032110.7,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,356871.1,2030935.2,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,359675.3,2032748.8,False
+component_dropped,2025,raster,288.55,0.0,288.55,shorter than 300 m,360829.8,2030396.0,False
+component_dropped,2025,raster,110.95,0.0,110.95,shorter than 300 m,361703.3,2030116.7,False
+component_dropped,2025,raster,110.95,0.0,110.95,shorter than 300 m,361058.1,2031023.8,False
+component_dropped,2025,raster,89.47,0.0,89.47,shorter than 300 m,359051.5,2031172.6,False
+component_dropped,2025,raster,98.18,0.0,98.18,shorter than 300 m,362837.6,2033492.7,False
+component_dropped,2025,raster,29.82,0.0,29.82,shorter than 300 m,363211.9,2031560.1,False
+component_dropped,2025,raster,112.29,0.0,112.29,shorter than 300 m,364140.8,2032567.5,False
+component_dropped,2025,raster,69.71,0.0,69.71,shorter than 300 m,358025.1,2030667.1,False
+component_dropped,2025,raster,142.38,0.0,142.38,shorter than 300 m,357508.9,2032451.6,False
+component_dropped,2025,raster,167.92,0.0,167.92,shorter than 300 m,364653.5,2028622.3,False
+component_dropped,2025,raster,69.71,0.0,69.71,shorter than 300 m,360536.3,2032080.3,False
+component_dropped,2025,raster,69.72,0.0,69.72,shorter than 300 m,361093.2,2029612.9,False
+component_dropped,2025,raster,41.23,0.0,41.23,shorter than 300 m,363493.9,2033168.6,False
+component_dropped,2025,raster,216.14,0.0,216.14,shorter than 300 m,360184.2,2030977.5,False
+component_dropped,2025,raster,698.11,0.0,698.11,does not touch the open-coast zone (pond / inland water / open-sea speckle),362110.1,2030819.7,False
+component_dropped,2025,raster,139.42,0.0,139.42,shorter than 300 m,363724.7,2031580.2,False
+component_dropped,2025,raster,28.48,0.0,28.48,shorter than 300 m,363198.9,2031724.2,False
+component_dropped,2025,raster,156.5,0.0,156.5,shorter than 300 m,363522.6,2029174.4,False
+component_dropped,2025,raster,199.07,0.0,199.07,shorter than 300 m,364581.9,2031993.1,False
+component_dropped,2025,raster,100.88,0.0,100.88,shorter than 300 m,364742.7,2032593.1,False
+component_dropped,2025,raster,41.24,0.0,41.24,shorter than 300 m,359686.5,2030392.5,False
+component_dropped,2025,raster,483.3,0.0,483.3,does not touch the open-coast zone (pond / inland water / open-sea speckle),363699.4,2032139.9,False
+component_dropped,2025,raster,1765.59,0.0,1765.59,does not touch the open-coast zone (pond / inland water / open-sea speckle),356560.1,2027951.6,False
+year_summary,2025,28 chains,609630.0,34216.51,575413.49,"28 traced chains, 34.2 km",,,False

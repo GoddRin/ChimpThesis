@@ -1,0 +1,261 @@
+{
+  "step": "audit",
+  "started_utc": "2026-10-03T14:12:47.861397+00:00",
+  "ended_utc": "2026-10-03T14:12:53.139886+00:00",
+  "versions": {
+    "python": "3.11.15",
+    "geopandas": "1.2.0",
+    "shapely": "2.1.2",
+    "pyproj": "3.7.2",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "statsmodels": "0.15.0",
+    "rasterio": "1.4.4",
+    "scikit-image": "0.26.0",
+    "matplotlib": "3.11.2",
+    "openpyxl": "3.1.5",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+  },
+  "parameters": {
+    "crs_work": 32651,
+    "crs_source": 4326,
+    "years": [
+      1990,
+      2000,
+      2010,
+      2020,
+      2025
+    ],
+    "reference_year": 1990,
+    "acquisition_dates": {
+      "1990": null,
+      "2000": null,
+      "2010": null,
+      "2020": null,
+      "2025": null
+    },
+    "shoreline_set": "vector_clean",
+    "legacy_barangay_points_buffer_m": 1000,
+    "legacy_barangay_points": {
+      "Dodan": [
+        121.701,
+        18.324
+      ],
+      "Maura": [
+        121.668,
+        18.347
+      ],
+      "Bulala Norte": [
+        121.578,
+        18.377
+      ],
+      "San Antonio": [
+        121.64,
+        18.359
+      ],
+      "Linao": [
+        121.594,
+        18.369
+      ],
+      "Paddaya": [
+        121.733,
+        18.31
+      ],
+      "Punta": [
+        121.633,
+        18.359
+      ],
+      "Bulala Sur": [
+        121.566,
+        18.382
+      ]
+    },
+    "legacy_gee_aoi": [
+      121.58,
+      18.33,
+      121.72,
+      18.39
+    ],
+    "landsat_pixel_m": 30,
+    "baseline": {
+      "method": "smoothed_reference",
+      "reference_year": 1990,
+      "smooth_m": 200,
+      "offset_landward_m": 150
+    },
+    "transects": {
+      "spacing_m": 50,
+      "length_seaward_m": 600,
+      "length_landward_m": 600,
+      "multi_hit_rule": "nearest",
+      "min_years_for_lrr": 3
+    },
+    "clean": {
+      "snap_tol_m": 5,
+      "min_segment_m": 20,
+      "min_loop_m": 50,
+      "simplify_m": 1.0,
+      "join_gap_m": 400
+    },
+    "manual_year_overrides": {},
+    "scope": {
+      "include_estuarine_banks": false,
+      "review_mask_file": null,
+      "hull_tolerance_m": 350
+    },
+    "uncertainty_m": {
+      "georeferencing": null,
+      "digitizing": null,
+      "pixel": null,
+      "tidal": null
+    },
+    "uncertainty_proposals_m": {
+      "pixel_landsat": 30
+    },
+    "risk": {
+      "low_max": 2.0,
+      "medium_max": 5.0,
+      "accretion_class": "Low",
+      "strip_width_m": 100,
+      "length_basis": "shoreline_km"
+    },
+    "barangay_join_tolerance_m": 500,
+    "study_barangays": [
+      "Linao",
+      "Maura",
+      "Punta",
+      "San Antonio",
+      "Bulala Sur",
+      "Bulala Norte",
+      "Dodan",
+      "Paddaya"
+    ],
+    "table_4_2_order": [
+      "Dodan",
+      "Maura",
+      "Bulala Norte",
+      "San Antonio",
+      "Linao",
+      "Paddaya",
+      "Punta",
+      "Bulala Sur"
+    ],
+    "survey": {
+      "structures": [
+        "Seawall",
+        "Revetment",
+        "Riprap",
+        "Breakwater",
+        "Mangrove Rehabilitation"
+      ],
+      "criteria": [
+        "Stability",
+        "Effectiveness",
+        "Cost",
+        "Durability",
+        "Maintenance",
+        "Environmental Impact"
+      ],
+      "alpha_min": 0.7,
+      "significance_level": 0.05,
+      "interpretation": [
+        [
+          4.21,
+          "Very High"
+        ],
+        [
+          3.41,
+          "High"
+        ],
+        [
+          2.61,
+          "Moderate"
+        ],
+        [
+          1.81,
+          "Low"
+        ],
+        [
+          1.0,
+          "Very Low"
+        ]
+      ]
+    },
+    "paths": {
+      "raw": "data/raw",
+      "shorelines_vector": "data/raw/shoreline_changes/Shoreline Changes.shp",
+      "risk_legacy": "data/raw/risk_zip/Aparri_MultiTemporal_Erosion_Risk_1990_2025.shp",
+      "barangays_all": "data/raw/Aparri/Aparri Barangays.shp",
+      "barangays_study": "data/raw/Aparri/Aparri_Brgy_Study.shp",
+      "gee_dir": "data/raw/gee_outputs",
+      "gee_stats_csv": "data/raw/gee_outputs/Aparri_Barangay_Erosion_Statistics_1990_2025.csv",
+      "qgz": "data/raw/Aparri/Aparr_Project.qgz",
+      "interim": "data/interim",
+      "processed": "data/processed",
+      "outputs": "outputs"
+    }
+  },
+  "input_sha256": {
+    "data/raw/Aparri/Aparr_Project.qgz": "06924f21b195b8c35d9fe6416b4948c0bffb8b0e5b58c5f03a3677625a35ea89",
+    "data/raw/Aparri/Aparri Barangays.cpg": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+    "data/raw/Aparri/Aparri Barangays.dbf": "fa3869c890c941035982870551bb064528c2f07a63b5012da75f38505f18638a",
+    "data/raw/Aparri/Aparri Barangays.prj": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+    "data/raw/Aparri/Aparri Barangays.qmd": "ccd6e2128f8b3325dcc5d9ae1bd52cf2fdde4bc4e7e303dd07f092d6338f62db",
+    "data/raw/Aparri/Aparri Barangays.shp": "d480fdbfcbc965c5a966bb5cee6c998da820cc56a63655e3a2818a8ace1fb97c",
+    "data/raw/Aparri/Aparri Barangays.shx": "2e4ab618183058e47c96830538b8a04b041238f0eb3215914eee8d341761e65d",
+    "data/raw/Aparri/Aparri_Brgy_Study.cpg": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+    "data/raw/Aparri/Aparri_Brgy_Study.dbf": "30b98ca64cad25026309a1f679a989475d9f1fc983e0a881d0d7b54ca1caf39c",
+    "data/raw/Aparri/Aparri_Brgy_Study.prj": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+    "data/raw/Aparri/Aparri_Brgy_Study.qmd": "ccd6e2128f8b3325dcc5d9ae1bd52cf2fdde4bc4e7e303dd07f092d6338f62db",
+    "data/raw/Aparri/Aparri_Brgy_Study.shp": "f0ebd12de1e4b7f560b035daa4fcabdde31ed933af4dd972e08161a0dd47909c",
+    "data/raw/Aparri/Aparri_Brgy_Study.shx": "bdcf576bd4eeb8d67cd85e442c1a644a14ec88a89fb1feac6078ad0c0d08ea24",
+    "data/raw/gee_outputs/Aparri_EPR_1990_2025.tif": "75fd1e8a946019f390547d831b33210f09c7cec16c1405acb70e633409096402",
+    "data/raw/gee_outputs/Aparri_Erosion_Risk_1990_2025.tif": "ee678b1d2582e5d3b0252aeb46b268be0de8b45609e521ad3c0d25a2c64434f2",
+    "data/raw/risk_zip/Aparri_MultiTemporal_Erosion_Risk_1990_2025.cpg": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+    "data/raw/risk_zip/Aparri_MultiTemporal_Erosion_Risk_1990_2025.dbf": "5dd60018371c9cc76887328f1a029130735b6b94c6318236ea2ff6ce46b7ec0b",
+    "data/raw/risk_zip/Aparri_MultiTemporal_Erosion_Risk_1990_2025.fix": "fac4a85c8590f2346523e9346746a5a5b4719b59ff617ca141d70bb8238c5ba3",
+    "data/raw/risk_zip/Aparri_MultiTemporal_Erosion_Risk_1990_2025.prj": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167",
+    "data/raw/risk_zip/Aparri_MultiTemporal_Erosion_Risk_1990_2025.shp": "ea89db6ed9c50cfc8800fe5b1ae9631a134ad70d4a74960c06de8cc248da254b",
+    "data/raw/risk_zip/Aparri_MultiTemporal_Erosion_Risk_1990_2025.shx": "ea6eb02bbcdbaa8f577f8942fb7d8c94c8e6139e928f3b9b428ca4f08fe235e5",
+    "data/raw/shoreline_changes/Shoreline Changes.cpg": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+    "data/raw/shoreline_changes/Shoreline Changes.dbf": "7fc07518244d0b19a4afaa9aa0671bc945ec2402b59a8551fe7b0f83d96b1778",
+    "data/raw/shoreline_changes/Shoreline Changes.prj": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+    "data/raw/shoreline_changes/Shoreline Changes.qmd": "e8fbda187ed95a7f3d5e683f84711f3cba45d0ac75ebc86043b9ff331ced4130",
+    "data/raw/shoreline_changes/Shoreline Changes.shp": "b1c498b74fd9bba977de4ce8e6c5d4749ddc4d9020ade9f58d6df7d680dfb954",
+    "data/raw/shoreline_changes/Shoreline Changes.shx": "6d0660c6024e946041e9496afa68a611c537a450d5dc6f74f8623d3de2a8b079"
+  },
+  "counts": {
+    "risk_polygons": 124,
+    "line_features": 20
+  },
+  "outputs": [
+    "docs/01_data_audit.md",
+    "outputs/maps/audit_barangay_edges.png",
+    "outputs/maps/audit_risk_by_label.png",
+    "outputs/maps/audit_river_mouth_zoom.png",
+    "outputs/maps/audit_shoreline_fragments_by_year.png",
+    "outputs/tables/audit_hig_candidates.csv",
+    "outputs/tables/audit_lines_vs_barangays.csv",
+    "outputs/tables/audit_qgis_layers.csv",
+    "outputs/tables/audit_qgis_layouts.csv",
+    "outputs/tables/audit_risk_by_label.csv",
+    "outputs/tables/audit_risk_by_type.csv",
+    "outputs/tables/audit_risk_join.csv",
+    "outputs/tables/audit_risk_label_x_epr.csv",
+    "outputs/tables/audit_risk_polygons.csv",
+    "outputs/tables/audit_risk_vs_raster_confusion.csv",
+    "outputs/tables/audit_shoreline_coverage.csv",
+    "outputs/tables/audit_shoreline_fragments.csv",
+    "outputs/tables/audit_shoreline_years.csv",
+    "outputs/tables/audit_thesis_claims.csv",
+    "outputs/tables/audit_threshold_violations.csv"
+  ],
+  "warnings": [
+    "uncertainty_m.georeferencing is null (NOT PROVIDED) - results depending on it are withheld/flagged",
+    "uncertainty_m.digitizing is null (NOT PROVIDED) - results depending on it are withheld/flagged",
+    "uncertainty_m.pixel is null (NOT PROVIDED) - results depending on it are withheld/flagged",
+    "uncertainty_m.tidal is null (NOT PROVIDED) - results depending on it are withheld/flagged"
+  ]
+}

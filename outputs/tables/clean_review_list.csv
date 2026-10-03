@@ -1,0 +1,8 @@
+action,year,feature_id,before_m,after_m,removed_m,reason,x,y,needs_human_review
+quarantine,Hig,19,3143.07,0.0,3143.07,year value 'Hig' is not a year; excluded until a human sets manual_year_overrides.feature_19,352929.9,2031578.3,True
+loop_kept,1990,0,64.99,64.99,0.0,self-crossing loop of 65 m >= min_loop_m: kept (probably real river-mouth geometry); please check,353552.6,2030639.0,True
+loop_kept,1990,0,539.64,539.64,0.0,self-crossing loop of 540 m >= min_loop_m: kept (probably real river-mouth geometry); please check,351774.0,2031341.5,True
+loop_kept,2000,6,106.26,106.26,0.0,self-crossing loop of 106 m >= min_loop_m: kept (probably real river-mouth geometry); please check,353042.3,2031062.7,True
+duplicate_stretch_removed,2010,10,7170.02,0.0,7170.02,91% of this fragment lies within 60 m of fragment(s) [3] (same coast digitised twice); the longer continuous version is kept,,,True
+duplicate_stretch_removed,2010,11,11111.06,0.0,11111.06,100% of this fragment lies within 60 m of fragment(s) [3] (same coast digitised twice); the longer continuous version is kept,,,True
+loop_kept,2025,17,1715.43,1715.43,0.0,self-crossing loop of 1715 m >= min_loop_m: kept (probably real river-mouth geometry); please check,356324.3,2028164.4,True

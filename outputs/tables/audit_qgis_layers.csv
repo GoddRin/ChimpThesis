@@ -1,0 +1,13 @@
+layer,type,source,crs,is_local_file,found_on_disk,renderer_field
+Aparri Barangays,vector,./Aparri Barangays.shp,EPSG:4326,True,True,
+Aparri_Brgy_Study,vector,./Aparri_Brgy_Study.shp,EPSG:4326,True,True,
+Risk,vector,../../../Downloads/Aparri_Erosion_Assessment-20260917T050811Z-1-001/Aparri_MultiTemporal_Erosion_Risk_1990_2025.shp,EPSG:4326,True,False,Risk_Level
+Aparri_Shoreline_1990,raster,../../../Downloads/Final_Aparri_Erosion_Assessment/Aparri_Shoreline_1990.tif,EPSG:4326,True,False,
+Aparri_Shoreline_2000,raster,../../../Downloads/Final_Aparri_Erosion_Assessment/Aparri_Shoreline_2000.tif,EPSG:4326,True,False,
+Aparri_Shoreline_2010,raster,../../../Downloads/Final_Aparri_Erosion_Assessment/Aparri_Shoreline_2010.tif,EPSG:4326,True,False,
+Aparri_Shoreline_2020,raster,../../../Downloads/Final_Aparri_Erosion_Assessment/Aparri_Shoreline_2020.tif,EPSG:4326,True,False,
+Aparri_Shoreline_2025,raster,../../../Downloads/Final_Aparri_Erosion_Assessment/Aparri_Shoreline_2025.tif,EPSG:4326,True,False,
+ESRI OSM Standard,vector-tile,styleUrl=https://raw.githubusercontent.com/thangqd/vstyles/main/esri/osm_standard.json&type=xyz&url=https://basemaps.arcgis.com/arcgis/rest/services/OpenStreetMap_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf,EPSG:3857,False,,
+Esri Light Gray,raster,crs=EPSG:3857&format&type=xyz&url=https://server.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/%7Bz%7D/%7By%7D/%7Bx%7D,EPSG:3857,False,,
+Google Satellite,raster,crs=EPSG:3857&format&type=xyz&url=https://mt1.google.com/vt/lyrs%3Ds%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D,EPSG:3857,False,,
+Shoreline Changes 1990-2025,vector,Shoreline Changes 1990-2025.shp,EPSG:4326,True,False,1990

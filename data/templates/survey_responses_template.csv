@@ -1,0 +1,31 @@
+respondent_id,profession,years_experience,worked_on_structure,familiar_with_structures,trained,structure,risk_level,criterion,score,data_origin
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Seawall,,Stability,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Seawall,,Effectiveness,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Seawall,,Cost,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Seawall,,Durability,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Seawall,,Maintenance,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Seawall,,Environmental Impact,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Revetment,,Stability,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Revetment,,Effectiveness,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Revetment,,Cost,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Revetment,,Durability,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Revetment,,Maintenance,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Revetment,,Environmental Impact,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Riprap,,Stability,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Riprap,,Effectiveness,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Riprap,,Cost,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Riprap,,Durability,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Riprap,,Maintenance,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Riprap,,Environmental Impact,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Breakwater,,Stability,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Breakwater,,Effectiveness,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Breakwater,,Cost,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Breakwater,,Durability,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Breakwater,,Maintenance,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Breakwater,,Environmental Impact,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Mangrove Rehabilitation,,Stability,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Mangrove Rehabilitation,,Effectiveness,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Mangrove Rehabilitation,,Cost,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Mangrove Rehabilitation,,Durability,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Mangrove Rehabilitation,,Maintenance,,REAL
+EXAMPLE-DELETE-ME,Civil Engineer,Less than 5 years,No,Yes,No,Mangrove Rehabilitation,,Environmental Impact,,REAL
