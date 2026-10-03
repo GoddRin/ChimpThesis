@@ -47,12 +47,15 @@ baseline:
   reference_year: 1990
   smooth_m: 200                # moving-average window along the line
   offset_landward_m: 150       # [DECISION] extra distance landward of the farthest-inland year
+  source_set: vector_clean     # [DECISION] D-09 the reference line / measuring grid is built from this set for ALL sets
+  landward_override: {}        # e.g. {S1: left} to overrule the automatic land test for a sector
 transects:
   spacing_m: 50
   length_seaward_m: 600
   length_landward_m: 600
   multi_hit_rule: nearest      # nearest | farthest | flag_only   (which crossing to keep)
   min_years_for_lrr: 3
+  max_turn_deg: 15             # normals turning more than this between neighbours = sharp bend (flagged)
 
 # --- Cleaning of the vector lines (Phase 3A) ---------------------------------
 clean:
