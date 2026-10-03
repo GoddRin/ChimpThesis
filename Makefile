@@ -1,6 +1,6 @@
 # Aparri pipeline. `make setup && make test` must pass on a clean checkout.
 PY := .venv/bin/python
-.PHONY: setup test audit audit-gee clean-lines raster-lines compare transects risk tables maps sensitivity survey web annex all
+.PHONY: setup test audit audit-gee clean-lines raster-lines compare transects risk tables maps sensitivity survey web annex all priority qgis drafts deck landsat annex-docs
 
 setup:
 	uv venv .venv -q || python3 -m venv .venv
@@ -33,7 +33,7 @@ web:              ## Phase 8  : static interactive map
 	$(PY) -m aparri.web
 annex:            ## Phase 10E: technical annex
 	$(PY) -m aparri.annex
-all: audit audit-gee clean-lines raster-lines transects risk tables maps sensitivity web
+all: audit audit-gee clean-lines raster-lines transects risk tables maps sensitivity web priority qgis drafts deck annex
 landsat:          ## Phase 3C : sub-pixel shorelines from index rasters exported by scripts/gee_v2.js
 	$(PY) -m aparri.landsat
 priority:         ## Phase 10C : barangay ranking for field inspection (weights in config)
