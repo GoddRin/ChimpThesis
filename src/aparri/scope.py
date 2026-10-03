@@ -62,6 +62,7 @@ class CoastScope:
         self.chain = c1 if seaness(c1) >= seaness(c2) else c2
         # "Sea" = everything on the sea side of the chain: the chain pushed 60 km along the sea normal.
         n = self._sea_sign * np.array([-self._ab[1], self._ab[0]]) / np.linalg.norm(self._ab)
+        self.sea_normal = n
         cc = np.array(self.chain.coords)
         self.sea_poly = Polygon(np.vstack([cc, (cc + 60_000 * n)[::-1]]))
         if not self.sea_poly.is_valid:

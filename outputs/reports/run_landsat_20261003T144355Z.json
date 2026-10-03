@@ -1,0 +1,220 @@
+{
+  "step": "landsat",
+  "started_utc": "2026-10-03T14:43:55.267049+00:00",
+  "ended_utc": "2026-10-03T14:43:55.267469+00:00",
+  "versions": {
+    "python": "3.11.15",
+    "geopandas": "1.2.0",
+    "shapely": "2.1.2",
+    "pyproj": "3.7.2",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "statsmodels": "0.15.0",
+    "rasterio": "1.4.4",
+    "scikit-image": "0.26.0",
+    "matplotlib": "3.11.2",
+    "openpyxl": "3.1.5",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+  },
+  "parameters": {
+    "crs_work": 32651,
+    "crs_source": 4326,
+    "years": [
+      1990,
+      2000,
+      2010,
+      2020,
+      2025
+    ],
+    "reference_year": 1990,
+    "acquisition_dates": {
+      "1990": null,
+      "2000": null,
+      "2010": null,
+      "2020": null,
+      "2025": null
+    },
+    "shoreline_set": "vector_clean",
+    "legacy_barangay_points_buffer_m": 1000,
+    "legacy_barangay_points": {
+      "Dodan": [
+        121.701,
+        18.324
+      ],
+      "Maura": [
+        121.668,
+        18.347
+      ],
+      "Bulala Norte": [
+        121.578,
+        18.377
+      ],
+      "San Antonio": [
+        121.64,
+        18.359
+      ],
+      "Linao": [
+        121.594,
+        18.369
+      ],
+      "Paddaya": [
+        121.733,
+        18.31
+      ],
+      "Punta": [
+        121.633,
+        18.359
+      ],
+      "Bulala Sur": [
+        121.566,
+        18.382
+      ]
+    },
+    "legacy_gee_aoi": [
+      121.58,
+      18.33,
+      121.72,
+      18.39
+    ],
+    "landsat_pixel_m": 30,
+    "baseline": {
+      "method": "smoothed_reference",
+      "reference_year": 1990,
+      "smooth_m": 200,
+      "offset_landward_m": 150
+    },
+    "transects": {
+      "spacing_m": 50,
+      "length_seaward_m": 600,
+      "length_landward_m": 600,
+      "multi_hit_rule": "nearest",
+      "min_years_for_lrr": 3
+    },
+    "clean": {
+      "snap_tol_m": 5,
+      "min_segment_m": 20,
+      "min_loop_m": 50,
+      "simplify_m": 1.0,
+      "duplicate_tol_m": 60,
+      "duplicate_cover": 0.8,
+      "min_scope_run_m": 150
+    },
+    "manual_year_overrides": {},
+    "scope": {
+      "include_estuarine_banks": false,
+      "review_mask_file": null,
+      "hull_tolerance_m": 350,
+      "concave_ratio": 0.1
+    },
+    "uncertainty_m": {
+      "georeferencing": null,
+      "digitizing": null,
+      "pixel": null,
+      "tidal": null
+    },
+    "uncertainty_proposals_m": {
+      "pixel_landsat": 30
+    },
+    "risk": {
+      "low_max": 2.0,
+      "medium_max": 5.0,
+      "accretion_class": "Low",
+      "strip_width_m": 100,
+      "length_basis": "shoreline_km"
+    },
+    "barangay_join_tolerance_m": 500,
+    "study_barangays": [
+      "Linao",
+      "Maura",
+      "Punta",
+      "San Antonio",
+      "Bulala Sur",
+      "Bulala Norte",
+      "Dodan",
+      "Paddaya"
+    ],
+    "table_4_2_order": [
+      "Dodan",
+      "Maura",
+      "Bulala Norte",
+      "San Antonio",
+      "Linao",
+      "Paddaya",
+      "Punta",
+      "Bulala Sur"
+    ],
+    "survey": {
+      "structures": [
+        "Seawall",
+        "Revetment",
+        "Riprap",
+        "Breakwater",
+        "Mangrove Rehabilitation"
+      ],
+      "criteria": [
+        "Stability",
+        "Effectiveness",
+        "Cost",
+        "Durability",
+        "Maintenance",
+        "Environmental Impact"
+      ],
+      "alpha_min": 0.7,
+      "significance_level": 0.05,
+      "interpretation": [
+        [
+          4.21,
+          "Very High"
+        ],
+        [
+          3.41,
+          "High"
+        ],
+        [
+          2.61,
+          "Moderate"
+        ],
+        [
+          1.81,
+          "Low"
+        ],
+        [
+          1.0,
+          "Very Low"
+        ]
+      ]
+    },
+    "paths": {
+      "raw": "data/raw",
+      "shorelines_vector": "data/raw/shoreline_changes/Shoreline Changes.shp",
+      "risk_legacy": "data/raw/risk_zip/Aparri_MultiTemporal_Erosion_Risk_1990_2025.shp",
+      "barangays_all": "data/raw/Aparri/Aparri Barangays.shp",
+      "barangays_study": "data/raw/Aparri/Aparri_Brgy_Study.shp",
+      "gee_dir": "data/raw/gee_outputs",
+      "gee_stats_csv": "data/raw/gee_outputs/Aparri_Barangay_Erosion_Statistics_1990_2025.csv",
+      "qgz": "data/raw/Aparri/Aparr_Project.qgz",
+      "interim": "data/interim",
+      "processed": "data/processed",
+      "outputs": "outputs"
+    },
+    "landsat": {
+      "index": "MNDWI",
+      "season_months": [
+        3,
+        4,
+        5
+      ],
+      "input_dir": "data/raw/landsat_v2",
+      "otsu_window_m": 3000,
+      "min_images_per_year": 3
+    }
+  },
+  "input_sha256": {},
+  "counts": {},
+  "outputs": [],
+  "warnings": [
+    "Phase 3C NOT RUN: no 'MNDWI_<year>.tif' rasters in data/raw/landsat_v2."
+  ]
+}

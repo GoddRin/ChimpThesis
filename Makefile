@@ -34,3 +34,5 @@ web:              ## Phase 8  : static interactive map
 annex:            ## Phase 10E: technical annex
 	$(PY) -m aparri.annex
 all: audit audit-gee clean-lines raster-lines transects risk tables maps sensitivity web
+landsat:          ## Phase 3C : sub-pixel shorelines from index rasters exported by scripts/gee_v2.js
+	$(PY) -m aparri.landsat

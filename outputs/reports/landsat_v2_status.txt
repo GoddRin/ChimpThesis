@@ -1,0 +1,4 @@
+Phase 3C NOT RUN: no 'MNDWI_<year>.tif' rasters in data/raw/landsat_v2.
+1. Open scripts/gee_v2.js in the Earth Engine Code Editor (own account) and run the exports.
+2. Download the rasters + scenes.csv from Drive into that folder.
+3. Run `make landsat`.
